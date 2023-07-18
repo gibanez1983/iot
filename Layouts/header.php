@@ -9,13 +9,13 @@
 			 <div class="collapse navbar-collapse" id="navbarsFurni">
 					 <ul class="custom-navbar-nav navbar-nav m-auto mb-2 mb-md-0">
 							 <li class="nav-item active">
-									 <a class="nav-link" href="index.html">Home</a>
+									 <a class="nav-link" href="index.php">Home</a>
 							 </li>
-							 <li> <a class="nav-link" href="#">Nosotros</a></li>
-							 <li> <a class="nav-link" href="#">Servicios y prestaciones</a></li>
-							 <li> <a class="nav-link" href="#">Especialidades medicas</a></li>
-							 <li> <a class="nav-link" href="#">Medicina laboral</a></li>
-							 <li> <a class="nav-link" href="#">Conacto</a></li>
+							 <li> <a class="nav-link" href="?p=nosotros">Nosotros</a></li>
+							 <li> <a class="nav-link" href="?p=serv_prest">Servicios y prestaciones</a></li>
+							 <li> <a class="nav-link" href="?p=esp_med">Especialidades medicas</a></li>
+							 <li> <a class="nav-link" href="?p=med_lab">Medicina laboral</a></li>
+							 <li> <a class="nav-link" href="?p=contacto">Conacto</a></li>
 
 					 </ul>
 
