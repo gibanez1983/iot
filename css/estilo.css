@@ -40,7 +40,11 @@ body{
   width: 100%;
 }
 
+a{
+  text-decoration-line: none;
+  color: #DDDDDD;
 
+}
 .custom-navbar{
     background: var(--primary)!important;
     display: flex;
@@ -171,7 +175,6 @@ footer{
     position: absolute;
     height: 508px;
     width: 100%;
-
     top: auto;
 
 }
@@ -328,4 +331,104 @@ flex-grow: 0;
   flex: none;
   order: 4;
   flex-grow: 0;
+}
+.footer-contacto{
+  position: absolute;
+  width: 263px;
+  height: 195px;
+  left: 941px;
+  top: 150px;
+}
+.contacto-contacto{
+  /* Contacto */
+  position: absolute;
+  width: 86.57px;
+  height: 28px;
+  /* Nunito/Sub3/M */
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+.contacto-telefono{
+  /* (+54) 0376-4440540 */
+  position: absolute;
+  width: 170px;
+  height: 26px;
+  top: 50px;
+  left:40px;
+  /* Nunito/Body 2/R */
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  letter-spacing: -0.18px;
+
+  color: #DDDDDD;
+}
+.contacto-mail{
+  /* info@sanatorioiot.com.ar */
+  position: absolute;
+  width: 200px;
+  height: 26px;
+  top: 100px;
+  left:30px;
+  /* Nunito/Body 2/R */
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.18px;
+
+  color: #DDDDDD;
+}
+.contacto-direccion{
+  /* Bolivar 2376 - CP:3300. Posadas, Misiones - Argentina */
+  position: absolute;
+  width: 227.93px;
+  height: 52px;
+  top: 150px;
+  left:40px;
+  /* Nunito/Body 2/R */
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  letter-spacing: -0.18px;
+
+  color: #DDDDDD;
+}
+
+.tel{
+  /* ant-design:phone-filled */
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50px;
+}
+
+.mail{
+  /* dashicons:email */
+  position: absolute;
+  width: 26.3px;
+  height: 24px;
+  top: 100px;
+}
+.dir{
+  position: absolute;
+  width: 26.3px;
+  height: 24px;
+  top: 150px;
 }
