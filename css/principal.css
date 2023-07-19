@@ -5,8 +5,9 @@
 
   position: absolute;
   top:  358px;
-  right: 765px;
+  /*right: 765px;
   bottom:178px;
+  left: 458px;*/
   left: 458px;
 }
 .imagen_espiral_dos{
@@ -15,8 +16,9 @@
 
   position: absolute;
   top:  397px;
-  right: 866px;
+  /*right: 866px;
   bottom:0px;
+  left: 244px;*/
   left: 244px;
 }
 
