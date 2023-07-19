@@ -1,6 +1,3 @@
- <?php
-header('Content-Type: text/html; charset=UTF-8');
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,23 +7,14 @@ header('Content-Type: text/html; charset=UTF-8');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!---- Boostrap CSS -->
     <link href="css/boostrap.min.css" rel="stylesheet">
-    <link href="scss/estilo.css" rel="stylesheet">
-    <!--
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/typeahead.js"></script>
-    <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
-    <link href="./css/2fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
-    <script src="./js/fileinput.min.js" type="text/javascript"></script>
-    <script src="./js/locales/es.js" type="text/javascript"></script>
-    -->
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link href="css/estilo.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="imagenes/favicon.ico" />
 </head>
 <body>
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-datepicker3.css">
-    <script src="bootstrap/dist/js/bootstrap-datepicker.min.js"></script>
     <header>
       <?php
-      require_once('header.php');
+      require_once('header.html');
       ?>
     </header>
     <section>
@@ -37,7 +25,7 @@ header('Content-Type: text/html; charset=UTF-8');
         </div>
     </section>
     <footer>
-      <?php require_once('footer.php'); ?>
+      <?php require_once('footer.html'); ?>
     </footer>
 </body>
 <script src="js/bootstrap.bundle.min.js"></script>
