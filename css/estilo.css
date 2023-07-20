@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('principal.css');
+@import url('nosotros.css');
 @font-face{
   font-family: 'Gotham';
   src: url('../fuentes/Gotham-Book-Font/Gotham_Book_Font.otf') format("truetype");
@@ -20,24 +21,45 @@
 
   --font-family: "Nunito", sans-serif;
 }
-
+/*
 *{
   margin: 0 auto;
   box-sizing: border-box;
-}
+}*/
 body{
     font-family: Nunito;
     font-weight: 400;
     line-height: 28px;
     color: var(--body_color);
-    /*margin-left: auto;
-    margin-right: auto;*/
+    width: 1920px;
+  /*  margin: 0 auto;*/
 
 }
-.cuerpo{
+/* responsive xs */
+@media screen and (min-width: 1px) and (max-width: 767px) {
+  body{
+    width: 500px;
+  }
+}
+/* responsive sm */
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
-  top: 0px;
+}
+/* responsive md */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+/* responsive lg */
+@media screen and (min-width: 1200px) {
+  body{
+    width: 1360px;
+  }
+}
+
+.cuerpo{
+  margin-top: 0px;
   width: 100%;
+  margin: 0 auto;
 }
 
 a{
@@ -45,7 +67,7 @@ a{
   color: #DDDDDD;
 
 }
-.custom-navbar{
+.navbar{ margin: 0 auto;
     background: var(--primary)!important;
     display: flex;
     position: fixed;
@@ -68,63 +90,26 @@ a{
 
 }
 
+.navbar-brand{
+padding-right: 200px;
+}
+/*
 .navbar-toogler {
   border-color: transparent;
 }
-
+*//*
 .navbar-toogler:active, .navbar-toogler:focus {
   box-shadow: none;
   outline: none;
 }
-/*
-.custom-navbar-nav{
-  li{
-    a{
-      font-weight: 500;
-      color: var(--white)!important;
-      opacity: .5;
-      transition: .3sa all ease;
-      position: relative;
-      &:before{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 8px;
-        right: 8px;
-        background: var(--secondary);
-        height: 5px;
-        opacity: 1;
-        visibility: visible;
-        width: 0;
-        transition: .15s all ease-out;
-
-      }
-      &:hover{
-        opacity:1;
-        &:before{
-          width: calc(100% - 16px);
-        }
-      }
-    }
-    &.active{
-      a{
-        opacity: 1;
-        &:before{
-          width: calc(100% - 16px);
-        }
-      }
-    }
-  }
-
-}
-*/
+*//*
 .custom-navbar-nav li a {
   font-weight: 500;
   color: var(--white) !important;
   opacity: .5;
   transition: .3sa all ease;
   position: relative;
-}
+}*//*
 
 .custom-navbar-nav li a:before {
   content: "";
@@ -139,28 +124,28 @@ a{
   width: 0;
   transition: .15s all ease-out;
 }
-
+*//*
 .custom-navbar-nav li a:hover {
   opacity: 1;
 }
-
+*//*
 .custom-navbar-nav li a:hover:before {
   width: calc(100% - 16px);
-}
+}*//*
 
 .custom-navbar-nav li.active a {
   opacity: 1;
 }
-
+*//*
 .custom-navbar-nav li.active a:before {
   width: calc(100% - 16px);
 }
-
+*//*
 .imagen_fondo{
   display:flex;
   width:100%;
   position: relative;
-}
+}*//*
 .imagen_vector{
 
   position: absolute;
@@ -168,267 +153,296 @@ a{
   right:866px;
   bottom: 221px;
   left: 0px;
-}
+}*/
 
-footer{
+.footer{
     background: var(--primary)!important;
-    position: absolute;
+  /*  position: absolute;*/
     height: 508px;
     width: 100%;
-    top: auto;
+    /*bottom: 0px;*/
+}
+/* responsive xs */
+@media screen and (min-width: 1px) and (max-width: 767px) {
+  .footer{
+    width: 700px;
+    height: 308px;
+  }
+}
+/* responsive sm */
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
+}
+/* responsive md */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+/* responsive lg */
+@media screen and (min-width: 1200px) {
+  .footer{
+    width: 1360px;
+    height: 408px;
+  }
 }
 
 .footer-img{
-
   margin-left:76px;
-  margin-top: 51px
+  margin-top: 51px;
+  width:136px;
+  height:80px;
 }
-
+.img_f{
+  width: 136px;
+  height:80px;
+}
 .footer-texto{
   text-align:left;
   margin-left:76px;
   margin-top: 16px;
   width: 480px;
-  height: 176px
-}
+  height: 176px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
 
+  color: #DDDDDD;
+}
+/* responsive xs */
+@media screen and (min-width: 1px) and (max-width: 767px) {
+  .footer-img{
+    margin-left:8px;
+    margin-top: 28px;
+
+  }
+  .img_f{
+    width: 106px;
+    height:60px;
+  }
+  .footer-texto{
+    width: 300px;
+    margin-left:8px;
+    margin-top: 12px;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+/* responsive sm */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+/* responsive md */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+/* responsive lg */
+@media screen and (min-width: 1200px) {
+  .footer-img{
+    margin-left:16px;
+    margin-top: 31px
+  }
+  .footer-texto{
+    margin-left:16px;
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
 .footer-links{
-  position: absolute;
   width: 264px;
   height: 225px;
-  left: 652px;
-  top: 150px;
-}
-
-.links-links{
-  display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 16px;
-
-position: absolute;
-width: 243.57px;
-height: 164px;
-
-
-  /* Nunito/Sub3/M */
+  margin-left: 732px;
+  margin-top: -180px;
   font-family: 'Nunito';
   font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.05px;
+  color: #DDDDDD;
+}
+.links-links{
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 243.57px;
+  height: 20px;
+  /*
+  font-family: 'Nunito';
+  font-style: normal;*/
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-  /* identical to box height, or 140% */
   letter-spacing: -0.02em;
 
   color: #FFFFFF;
 }
-
 .links-home{
-  /* Home */
   width: 39px;
 height: 20px;
-position: absolute;
-top: 65px;
-/* Nunito/Button/B */
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
-letter-spacing: -0.05px;
-
-color: #DDDDDD;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+margin-top: 45px;
 }
 
 .links-nosotros{
-  /* Nosotros */
   width: 59px;
   height: 20px;
-  position: absolute;
-  top: 105px;
-  /* Nunito/Button/B */
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  /* identical to box height, or 143% */
-  letter-spacing: -0.05px;
-  color: #DDDDDD;
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  margin-top: 15px;
 }
 
 .links-serv_prest{
-  /* Servicios y prestaciones */
   width: 155px;
   height: 20px;
-  position: absolute;
-  top: 140px;
-  /* Nunito/Button/B */
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  /* identical to box height, or 143% */
-  letter-spacing: -0.05px;
-  color: #DDDDDD;
-  /* Inside auto layout */
-  flex: none;
-  order: 2;
-  flex-grow: 0;
+ margin-top: 15px;
 }
 
 .links-esp_med{
-  /* Especialidades Médicas */
   width: 152px;
   height: 20px;
-  position: absolute;
-  top: 180px;
-  /* Nunito/Button/B */
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  /* identical to box height, or 143% */
-  letter-spacing: -0.05px;
-  color: #DDDDDD;
-  /* Inside auto layout */
-  flex: none;
-  order: 3;
-  flex-grow: 0;
+ margin-top: 15px;
 }
 
 .links-contacto{
-  /* Contacto */
   width: 58px;
   height: 20px;
-  position: absolute;
-  top: 220px;
-  /* Nunito/Button/B */
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  /* identical to box height, or 143% */
-  letter-spacing: -0.05px;
-  color: #DDDDDD;
-  /* Inside auto layout */
-  flex: none;
-  order: 4;
-  flex-grow: 0;
+ margin-top: 15px;
+}
+
+/* responsive xs */
+@media screen and (min-width: 1px) and (max-width: 767px) {
+  .footer-links{
+    margin-left: 362px;
+    margin-top: -190px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .links-links{
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .links-home, .links-nosotros, .links-serv_prest, .links-esp_med, .links-contacto{
+    height: 10px;
+    margin-top: 10px;
+  }
+
+}
+/* responsive sm */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+/* responsive md */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+/* responsive lg */
+@media screen and (min-width: 1200px) {
+  .footer-links{
+    margin-left: 632px;
+    margin-top: -180px;
+  }
 }
 .footer-contacto{
-  position: absolute;
-  width: 263px;
-  height: 195px;
-  left: 941px;
-  top: 150px;
+  width: 274px;
+  height: 225px;
+  margin-left: 1042px;
+  margin-top: -220px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.18px;
+  color: #DDDDDD;
 }
+
 .contacto-contacto{
-  /* Contacto */
-  position: absolute;
   width: 86.57px;
   height: 28px;
-  /* Nunito/Sub3/M */
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-  /* identical to box height, or 140% */
   letter-spacing: -0.02em;
   color: #FFFFFF;
 }
+
 .contacto-telefono{
-  /* (+54) 0376-4440540 */
-  position: absolute;
-  width: 170px;
+  width: 190px;
   height: 26px;
-  top: 50px;
-  left:40px;
-  /* Nunito/Body 2/R */
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  /* identical to box height, or 162% */
-  letter-spacing: -0.18px;
-
-  color: #DDDDDD;
+  margin-top: 35px;
 }
-.contacto-mail{
-  /* info@sanatorioiot.com.ar */
-  position: absolute;
-  width: 200px;
-  height: 26px;
-  top: 100px;
-  left:30px;
-  /* Nunito/Body 2/R */
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  /* identical to box height, or 162% */
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.18px;
-
-  color: #DDDDDD;
-}
-.contacto-direccion{
-  /* Bolivar 2376 - CP:3300. Posadas, Misiones - Argentina */
-  position: absolute;
-  width: 227.93px;
-  height: 52px;
-  top: 150px;
-  left:40px;
-  /* Nunito/Body 2/R */
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  /* or 162% */
-  letter-spacing: -0.18px;
-
-  color: #DDDDDD;
-}
-
 .tel{
-  /* ant-design:phone-filled */
-  position: absolute;
   width: 24px;
   height: 24px;
-  top: 50px;
+
+}
+.contacto-mail{
+  width: 220px;
+  height: 26px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.mail{
+  width: 26.3px;
+  height: 24px;
 }
 
-.mail{
-  /* dashicons:email */
-  position: absolute;
-  width: 26.3px;
-  height: 24px;
-  top: 100px;
+.contacto-direccion{
+  width: 227.93px;
+  height: 52px;
+  margin-top: 20px;
 }
+
 .dir{
-  position: absolute;
   width: 26.3px;
   height: 24px;
-  top: 150px;
+}
+/* responsive xs */
+@media screen and (min-width: 1px) and (max-width: 767px) {
+  .footer-contacto{
+    margin-left: 542px;
+    margin-top: -220px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .contacto-contacto{
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .contacto-telefono, .contacto-mail, .contacto-direccion{
+    height: 10px;
+    margin-top: 15px;
+  }
+
+  .contacto-direccion{
+    width: 147.93px;
+  }
+  .tel, .mail, .dir{
+    width: 16.3px;
+    height: 20px;
+  }
+}
+/* responsive sm */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+/* responsive md */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+/* responsive lg */
+@media screen and (min-width: 1200px) {
+  .footer-contacto{
+    margin-left: 942px;
+    margin-top: -220px;
+  }
 }
