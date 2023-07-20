@@ -23,7 +23,7 @@ margin-top: 0px;
 
 }
 /* responsive lg */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px)  and (max-width: 1366px){
 
 }
 .imagen_espiral_uno{
@@ -148,7 +148,7 @@ left: 280.40px;
 
 }
 /* responsive lg */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px)  and (max-width: 1366px){
 
 }
 .icono{
@@ -184,7 +184,7 @@ left: 280.40px;
 
 }
 /* responsive lg */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px)  and (max-width: 1366px){
 
 }
 #imagenes_rotativas{
@@ -205,7 +205,7 @@ left: 280.40px;
 
 }
 /* responsive lg */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px)  and (max-width: 1366px){
 
 }
 

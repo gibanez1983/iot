@@ -50,7 +50,7 @@ body{
 
 }
 /* responsive lg */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1366px){
   body{
     width: 1360px;
   }
@@ -178,7 +178,7 @@ padding-right: 200px;
 
 }
 /* responsive lg */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1366px) {
   .footer{
     width: 1360px;
     height: 408px;
@@ -239,7 +239,7 @@ padding-right: 200px;
 
 }
 /* responsive lg */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1366px) {
   .footer-img{
     margin-left:16px;
     margin-top: 31px
@@ -341,7 +341,7 @@ margin-top: 45px;
 
 }
 /* responsive lg */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px)  and (max-width: 1366px){
   .footer-links{
     margin-left: 632px;
     margin-top: -180px;
@@ -440,7 +440,7 @@ margin-top: 45px;
 
 }
 /* responsive lg */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px)  and (max-width: 1366px){
   .footer-contacto{
     margin-left: 942px;
     margin-top: -220px;
