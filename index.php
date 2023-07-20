@@ -1,3 +1,3 @@
 <?php
-  require_once('Layouts/layout.php');
+  require_once('layouts/layout.php');
 ?>
