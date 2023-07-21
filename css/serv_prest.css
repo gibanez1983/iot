@@ -43,7 +43,7 @@
   font-size: 16px;
   line-height: 28px;
   letter-spacing: -0.18px;
-
+width: 552px;
   color: #2D2926;
 
   flex: none;
@@ -71,7 +71,7 @@
   flex-grow: 0;
 }
 #otro_v{
-  padding-top: 30px;
+  padding-top: 20px;
 }
 /**************************/
 .texto_tip, .texto_interna, .texto_cirug, .texto_transp, .texto_imag, .texto_onco, .texto_trauma, .texto_lab{

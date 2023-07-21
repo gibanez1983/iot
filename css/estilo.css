@@ -3,6 +3,7 @@
 @import url('principal.css');
 @import url('nosotros.css');
 @import url('serv_prest.css');
+@import url('contacto.css');
 @font-face{
   font-family: 'Gotham';
   src: url('../fuentes/Gotham-Book-Font/Gotham_Book_Font.otf') format("truetype");
