@@ -67,7 +67,6 @@ body{
 a{
   text-decoration-line: none;
   color: #DDDDDD;
-
 }
 .navbar{ margin: 0 auto;
     background: var(--primary)!important;

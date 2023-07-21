@@ -1,3 +1,30 @@
+/*titulo contacto */
+.f_titulo_contacto{
+  position: flex;
+  width: 100%;
+  height: 150px;
+  left: 0px;
+  top: 0px;
+
+  background: #F6ECED;
+}
+.titulo_contacto{
+  position: absolute;
+  width: 80%;
+  height: 62px;
+  padding-top: 50px;
+  padding-left: calc(50% - 624px/2);
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 62px;
+
+  letter-spacing: -0.03em;
+
+  color:  var(--principal-1);
+}
+/*primer cuadro mapa*/
 .row.mapa{
     padding-top: 30px;
 }
@@ -7,9 +34,13 @@
   height: 358px;
 }
 
-.card_informa{
-  width: 297px;
-  height: 32px;
+.col.cont{
+  width: 457px;
+  height: 288px;
+}
+.card_informa.contact,#acontact {
+  width: 457px;
+  height: 64px;
 
   font-family: 'Nunito';
   font-style: normal;
@@ -19,12 +50,104 @@
   letter-spacing: -0.03em;
 
   color: #2D2926;
-
+text-decoration-line: none;
   flex: none;
   order: 1;
   flex-grow: 0;
 }
-.icono{
+
+.icono.contact{
   width: 24px;
   height: 24px;
+}
+
+.lc{
+  width: 149px;
+  height: 24px;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
+  letter-spacing: -0.26px;
+
+  color: #A61E2F;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.linea{
+  border: 1px solid #E4E5E9;
+  width: 457px;
+  height: 2px;
+  margin: 15px;
+}
+
+/*formulario mensaje */
+#cont_mail{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*titulo mensaje */
+.titulo_mjs{
+  width: 325px;
+  height: 44px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: -0.03em;
+
+  color: #A61E2F;
+}
+#t_c{
+width: 552px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+display: flex;
+
+letter-spacing: 0.25px;
+
+color: #17181C;
+
+flex: none;
+order: 0;
+flex-grow: 1;
+}
+#inputNomAp, #inputEmail4, #inputtelefono, #inputmensaje{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+display: flex;
+align-items: center;
+letter-spacing: 0.25px;
+
+color: #5C6070;
+}
+#enviar{
+  background:#A61E2F;
+  width: 168px;
+  height: 44px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  align-content: center;
 }
