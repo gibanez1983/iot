@@ -6,12 +6,12 @@ margin-top: 0px;
 }
 
 /* responsive xs */
-@media screen and (min-width: 1px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 420px) {
   .imagen_fondo{
-  width: 700px;
-  height: 420px;
-  margin-left: 0px;
-  margin-top: 0px;
+ 
+    height: 220px;
+    margin-left: 0px;
+    margin-top: 0px;
   }
 }
 /* responsive sm */
@@ -32,10 +32,7 @@ margin-top: 0px;
 
   position: absolute;
   top:  358px;
-  /*right: 765px;
-  bottom:178px;
-  left: 458px;*/
-  left: 458px;
+  left: 553px;
 }
 .imagen_espiral_dos{
   width: 202.265px;
@@ -46,13 +43,19 @@ margin-top: 0px;
   /*right: 866px;
   bottom:0px;
   left: 244px;*/
-  left: 244px;
+  left: 340px;
 }
 .imagen_vector{
+  width: 635px;
+  height: 350px;
+  flex-shrink: 0;
   position: absolute;
-left: 0px;
-top: 150px;
-angle: -180 deg;
+  left: 0px;
+  top: 150px;
+  background-color: #A61E2F;
+  border-radius: 6px 55px 2px 6px;
+-webkit-border-radius: 6px 55px 2px 6px;
+-moz-border-radius: 6px 55px 2px 6px;
 
 }
 .imagen_circulo_verde{
@@ -63,7 +66,7 @@ angle: -180 deg;
   top: 433px;
   /*right: 866.05px;
   bottom:147.06px;*/
-  left: 412px;
+  left: 505px;
 }
 
 .texto_juntos{
