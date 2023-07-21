@@ -50,11 +50,5 @@
     </footer>
       <!-- Archivo JS Bootstrap 5 -->
       <script src="boostrap5/js/bootstrap.bundle.min.js"></script>
-      <script>
-        function get_pagina(pagina){
-          window.location.href='index.php'+pagina;
-        }
-      </script>
-
   </body>
 </html>

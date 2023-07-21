@@ -1,0 +1,196 @@
+/***guardia y otros */
+.row.guard{
+    padding-top: 100px;
+}
+.t_guard{
+  width: 163px;
+  height: 52px;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  color: #2D2926;
+}
+.img_guard{
+  width: 457px;
+  height: 256px;
+}
+.texto_guard{
+  width: 456px;
+  height: 96px;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.26px;
+  color: #2D2926;
+}
+.col.otroo{
+  width: 80px;
+}
+#otro_1, #otro_2{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.18px;
+
+  color: #2D2926;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+  border-radius: 8px;
+  background: var(--neutral-98, #F8F7F6);
+  box-shadow: inset 0px 4px 58px 150px rgba(0, 0, 0, 0.08);
+}
+#titulo_otro{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+
+  color: #A61E2F;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+#otro_v{
+  padding-top: 30px;
+}
+/**************************/
+.texto_tip, .texto_interna, .texto_cirug, .texto_transp, .texto_imag, .texto_onco, .texto_trauma, .texto_lab{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.18px;
+  color: #2D2926;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+#titulo{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 62px;
+  letter-spacing: -0.03em;
+  color: #2D2926;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+/*TIP*/
+.row.tip{
+  padding-top: 100px;
+}
+.img_tip{
+  width: 555px;
+  height: 370px;
+}
+.t_tip{
+  width: 549px;
+  height: 124px;
+}
+/*internacion*/
+.row.interna{
+  padding-top: 100px;
+}
+.t_interna{
+  width: 552px;
+  height: 62px;
+}
+.img_interna{
+  width: 555px;
+  height: 370px;
+}
+/*cirugia*/
+.row.cirug{
+  padding-top: 100px;
+}
+.img_cirug{
+  width: 555px;
+  height: 370px;
+}
+.t_cirug{
+  width: 543px;
+  height: 62px;
+}
+/*transplantes*/
+.row.transp{
+  padding-top: 100px;
+}
+.t_transp{
+  width: 539px;
+  height: 124px;
+}
+.img_transp{
+  width: 555px;
+  height: 370px;
+}
+/*imagenes*/
+.row.imag{
+  padding-top: 100px;
+}
+.img_imag{
+  width: 555px;
+  height: 370px;
+}
+.t_imag{
+  width: 552px;
+  height: 186px;
+}
+/*oncologia*/
+.row.onco{
+  padding-top: 100px;
+}
+.t_onco{
+  width: 651px;
+  height: 124px;
+}
+.img_onco{
+  width: 555px;
+  height: 370px;
+}
+/*traumatologia*/
+.row.trauma{
+  padding-top: 100px;
+}
+.img_trauma{
+  width: 555px;
+  height: 370px;
+}
+.t_trauma{
+  width: 552px;
+  height: 124px;
+}
+/*laboratorio*/
+.row.lab{
+  padding-top: 100px;
+}
+.t_lab{
+  width: 552px;
+  height: 62px;
+}
+.img_lab{
+  width: 555px;
+  height: 370px;
+}
