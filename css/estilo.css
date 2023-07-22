@@ -30,26 +30,12 @@
  
 }
 
-/* responsive xs */
-/* @media screen and (min-width: 1px) and (max-width: 767px) {
-  body{
-    width: 500px;
-  }
-} */
-/* responsive sm */
-/* @media screen and (min-width: 768px) and (max-width: 991px) {
-
-} */
-/* responsive md */
-/* @media screen and (min-width: 992px) and (max-width: 1199px) {
-
-} */
-/* responsive lg */
-/* @media screen and (min-width: 1200px) {
-  body{
-    width: 1360px;
-  }
-} */
+.img_principal {
+  width: 100%;
+  height: 720px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
 
 .cuerpo{
   margin-top: 0px;
@@ -83,7 +69,10 @@ a{
     backdrop-filter: blur(5px);
 
 }
-
+samp {
+  font-weight: bold;
+  color: #DDDDDD;
+}
 
 /*
 .navbar-toogler {
@@ -558,6 +547,12 @@ margin-top: 45px;
 
 
 @media screen and ((min-width: 230px)and (max-width: 620px)) {
+
+  .img_principal {
+    width: 100%;
+    height: 220px;
+  }
+  
   .navbar .container{
     flex-wrap:initial;
   }
@@ -646,6 +641,28 @@ margin-top: 45px;
     height: 80px;
     top: 180px;
     left: 73px;
+  }
+
+  .footer_inicial_flex_container{
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+  }
+
+  .card_informa{
+    width: 80%;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icono {
+    width: 15px;
+    height: 15px;
+  }
+  samp {
+    font-weight: bold;
+    color: #DDDDDD;
 }
 
 }
