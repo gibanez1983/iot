@@ -3,6 +3,8 @@
 @import url('normalize.css');
 @import url('principal.css');
 @import url('nosotros.css');
+@import url('serv_prest.css');
+@import url('contacto.css');
 @font-face{
   font-family: 'Gotham';
   src: url('../fuentes/Gotham-Book-Font/Gotham_Book_Font.otf') format("truetype");
@@ -438,8 +440,19 @@ margin-top: 45px;
   }
 } */
 
-@media screen and (min-width: 375px) and (max-width: 424px) {
-  
+/* @media screen and (min-width: 320px) and (max-width: 424px) {
+  .imagen_vector {
+    width: 160px;
+    height: 150px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 0px;
+    top: 120px;
+    background-color:black;
+    border-radius: 6px 55px 2px 6px;
+    -webkit-border-radius: 6px 55px 2px 6px;
+    -moz-border-radius: 6px 55px 2px 6px;
+}
   
 }
 
@@ -447,4 +460,193 @@ margin-top: 45px;
   .navbar-nav{
     text-align: center;
   }
+  
+} */
+
+@media screen and ((min-width: 620px)and (max-width: 780px)) {
+  .navbar .container{
+    flex-wrap:initial;
+  }
+  .imagen_fondo {
+    height: 320px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .imagen_vector {
+    width: 160px;
+    height: 90px;
+    left: 0px;
+    top: 120px;
+    border-radius: 6px 55px 2px 6px;
+    -webkit-border-radius: 6px 20px 2px 6px;
+    -moz-border-radius: 6px 55px 2px 6px;
+   }
+
+   .cuatro{
+    width: 25px;
+    height: 30px;
+   }
+
+   .imagen_cuatro {
+    width: 30px;
+    height: 30px;
+    top: 145px;
+    left: 25px;
+    }
+
+    .imagen_cero {
+      width: 30px;
+      height: 30px;
+      top: 145px;
+      left: 51px;
+  }
+
+  .texto_juntos {
+    font-size: 6px;
+    top: 150px;
+    left: 82px;
+  }
+
+  .texto_cuidando {
+    font-size: 7.5px;
+    top: 158px;
+    left: 82px;
+  }
+  .texto_de_vos {
+    font-size: 7.5px;
+    top: 166px;
+    left: 82px;
+  }
+
+  .circulo_rojo{
+    width: 50px;
+    height: 50px;
+  }
+
+  .imagen_espiral_uno {
+    width: 30px;
+    height: 30px;
+    top: 172px;
+    left: 138px;
+  }
+
+  .imagen_circulo_verde {
+    width: 30px;
+    height: 30px;
+    top: 195px;
+    left: 125px;
+  }
+
+  .circulo_verde{
+    width: 30px;
+    height: 30px;
+  }
+
+  .circulo_espiral{
+    width: 80px;
+    height: 80px;
+  }
+
+  .imagen_espiral_dos {
+    width: 80px;
+    height: 80px;
+    top: 180px;
+    left: 73px;
+}
+
+}
+
+
+
+@media screen and ((min-width: 230px)and (max-width: 620px)) {
+  .navbar .container{
+    flex-wrap:initial;
+  }
+  .imagen_fondo {
+    height: 220px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .imagen_vector {
+    width: 160px;
+    height: 90px;
+    left: 0px;
+    top: 120px;
+    border-radius: 6px 55px 2px 6px;
+    -webkit-border-radius: 6px 20px 2px 6px;
+    -moz-border-radius: 6px 55px 2px 6px;
+   }
+
+   .cuatro{
+    width: 25px;
+    height: 30px;
+   }
+
+   .imagen_cuatro {
+    width: 30px;
+    height: 30px;
+    top: 145px;
+    left: 25px;
+    }
+
+    .imagen_cero {
+      width: 30px;
+      height: 30px;
+      top: 145px;
+      left: 51px;
+  }
+
+  .texto_juntos {
+    font-size: 6px;
+    top: 150px;
+    left: 82px;
+  }
+
+  .texto_cuidando {
+    font-size: 7.5px;
+    top: 158px;
+    left: 82px;
+  }
+  .texto_de_vos {
+    font-size: 7.5px;
+    top: 166px;
+    left: 82px;
+  }
+
+  .circulo_rojo{
+    width: 50px;
+    height: 50px;
+  }
+
+  .imagen_espiral_uno {
+    width: 30px;
+    height: 30px;
+    top: 172px;
+    left: 138px;
+  }
+
+  .imagen_circulo_verde {
+    width: 30px;
+    height: 30px;
+    top: 195px;
+    left: 125px;
+  }
+
+  .circulo_verde{
+    width: 30px;
+    height: 30px;
+  }
+
+  .circulo_espiral{
+    width: 80px;
+    height: 80px;
+  }
+
+  .imagen_espiral_dos {
+    width: 80px;
+    height: 80px;
+    top: 180px;
+    left: 73px;
+}
+
 }

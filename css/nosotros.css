@@ -47,10 +47,12 @@ margin-top: 0px;
 }
 .row.cuadros{
   width:80%;
-  padding-top: 20px;
+  padding-top: 60px;
   margin-left: 10%;
 }
 .cuadros_texto{
+  width: 330px;
+  padding-left: 10px;
 font-family: 'Nunito';
 font-style: normal;
 font-weight: 400;
@@ -63,7 +65,7 @@ color: #000000;
   position: absolute;
   width: 154px;
   height: 26px;
-  left: 230px;
+  padding-left: 90px;
   top: 910px;
 
   font-family: 'Nunito';
@@ -77,25 +79,25 @@ color: #000000;
 }
 .text-tray{
   position: absolute;
-width: 137px;
-height: 26px;
-left: 235px;
-top: 980px;
+  width: 240px;
+  height: 26px;
+  padding-left: 100px;
+  top: 980px;
 
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 26px;
-letter-spacing: -0.18px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.18px;
 
-color: #F8F7F6;
+  color: #F8F7F6;
 }
 .text-35{
   position: absolute;
   width: 230px;
   height: 26px;
-  left: 548px;
+  padding-left: 40px;
   top: 910px;
 
   font-family: 'Nunito';
@@ -108,12 +110,10 @@ color: #F8F7F6;
   color: #F8F7F6;
 }
 .text-esp{
-  /* Especialidades médicas */
-
   position: absolute;
-  width: 166px;
+  width: 340px;
   height: 26px;
-  left: 593px;
+  padding-left: 90px;
   top: 980px;
 
   font-family: 'Nunito';
@@ -129,7 +129,7 @@ color: #F8F7F6;
   position: absolute;
   width: 154px;
   height: 26px;
-  left: 954px;
+  padding-left: 100px;
   top: 910px;
 
   font-family: 'Nunito';
@@ -143,9 +143,9 @@ color: #F8F7F6;
 }
 .text-camas{
   position: absolute;
-  width: 148px;
+  width: 248px;
   height: 26px;
-  left: 967px;
+  padding-left: 100px;
   top: 980px;
 
   font-family: 'Nunito';
@@ -157,13 +157,174 @@ color: #F8F7F6;
 
   color: #F8F7F6;
 }
-.row.mision{
+/*Historia*/
+.historia{
+  padding-top: 60px;
+}
+.img_h{
+  width: 725px;
+   height: 714px;
+float:right;
+}
+.titulo_h{
+  position: absolute;
+  width: 461px;
+  height: 144px;
+  left: 71px;
+  top: 1482px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+.texto_h{
+  position: absolute;
+  width: 456px;
+  height: 417px;
+  left: 76px;
+  top: 1655px;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.18px;
+
+  color: #000000;
+}
+/*Misiones Valor Vision*/
+.row.mvv{
   width:80%;
-  padding-top: 20px;
+  padding-top: 70px;
   margin-left: 10%;
 }
+.col-md-3.opc{
+    width:300px;
+    padding-right:  24px;
+  border-radius: 8px;
+  background: var(--neutral-98, #F8F7F6);
+  box-shadow: inset 0px 4px 58px 150px rgba(0, 0, 0, 0.08);
+}
 .img-fluid.img_m{
-
   width:100px;
+  margin-left: 80px;
 
+}
+.text-center.mision,.text-center.vision,.text-center.valor{
+  width: 269px;
+  height: 52px;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.03em;
+
+  color: #2D2926;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.cuadros_texto_m{
+  width: 269px;
+  height: 225px;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: -0.18px;
+
+  color: #2D2926;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+/*Docencia e Investigacion*/
+.titulo_d{
+  position:static;
+  width: 90%;
+  height: 72px;
+padding-top: 50px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: -0.03em;
+
+  color: #000000;
+}
+
+.row.d1{
+	padding-top: 80px;
+ }
+
+.titulo_d1{
+  width: 552px;
+  height: 44px;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.03em;
+
+  color: #000000;
+}
+.img_d1{
+  width: 543px;
+  height: 362px;
+  float:right;
+  display: inline;
+}
+.texto_d1{
+  width: 552px;
+  height: 362px;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.18px;
+
+  color: #000000;
+}
+
+/*2*/
+.row.d2{
+	padding-top: 80px;
+ }
+.img_d2{
+  width: 555px;
+  height: 370px;
+  float:left;
+  display: inline;
+}
+.texto_d2{
+  width: 552px;
+  height: 362px;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.18px;
+
+  color: #000000;
 }
