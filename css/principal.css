@@ -8,7 +8,7 @@ margin-top: 0px;
 /* responsive xs */
 /* @media screen and (min-width: 375px) and (max-width: 420px) {
   .imagen_fondo{
- 
+
     height: 220px;
     margin-left: 0px;
     margin-top: 0px;
@@ -134,7 +134,7 @@ left: 280.40px;
   font-weight: 700;
   width: 100%;
   margin-left: 45px;
-  
+
 }
 
 .mapa_principal{
@@ -267,7 +267,7 @@ letter-spacing: -0.18px;
   line-height: normal;
   margin-bottom: 0px;
 }
-*/
+
 .modal-header{
   background: #CB989E;
   width: 100%;
@@ -310,7 +310,7 @@ line-height: 26px;
 letter-spacing: -0.18px;
 }
 
-#imxx{ 
+#imxx{
   width: 500px;
 }
 .carousel-inner {
@@ -341,7 +341,7 @@ letter-spacing: -0.18px;
 }
 .card .img-wrapper {
     max-width: 100%;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -361,7 +361,7 @@ letter-spacing: -0.18px;
     width: 100%;
     height: 220px;
   }
-  
+
   .imagen_fondo {
     height: 220px;
     margin-left: 0px;
@@ -482,7 +482,6 @@ letter-spacing: -0.18px;
   .titulo_carrusel{
     font-size: 18px;
   }
-  
-  
-}
 
+
+}
