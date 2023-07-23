@@ -21,14 +21,14 @@
   --dark: #2f2f2f;
   --light: #dce5e4;
   --body_color: #F8F7F6; /*neutral 98*/
-  --neutral-98: #F8F7F6
+  --neutral-98: #F8F7F6;
 
   --font-family: "Nunito", sans-serif;
 }
 
 *{
   margin: 0 auto;
- 
+
 }
 
 .img_principal {
@@ -317,7 +317,7 @@ samp {
 
 
 @media screen and ((min-width: 620px)and (max-width: 780px)) {
- 
+
   .imagen_fondo {
     height: 320px;
     margin-left: 0px;
@@ -418,7 +418,7 @@ samp {
     width: 100%;
     height: 220px;
   }
-  
+
   .imagen_fondo {
     height: 220px;
     margin-left: 0px;
