@@ -41,14 +41,16 @@
 
       </main>
       <!-- Footer -->
-      <!-- <footer class="footer mt-auto py-3 bg-light">
+      <footer class="footer mt-auto py-3 bg-light">
       <div class="container">
         <?php
-        //require_once('footer.html');
+          require_once('footer.html');
         ?>
       </div>
-    </footer> -->
+    </footer> 
       <!-- Archivo JS Bootstrap 5 -->
+      <script src="js/jquery-3.6.0.min.js"></script>
       <script src="boostrap5/js/bootstrap.bundle.min.js"></script>
+      <script src="js/index.js"></script>
   </body>
 </html>
