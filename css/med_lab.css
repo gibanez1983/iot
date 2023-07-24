@@ -84,7 +84,7 @@
 }
 /*titulo titulo_ml*/
 .titulo_ml{
-  position: flex;
+/*  position: flex;*/
   width: 1128px;
   height: 52px;
   padding-left: calc(50% - 1128px/2);
