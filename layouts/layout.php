@@ -19,10 +19,12 @@
 
   </head>
   <body>
-
+    <!-- Archivo JS Bootstrap 5 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="boostrap5/js/bootstrap.bundle.min.js"></script>
       <main>
 
-        <div class="container mb-5" >
+        <div class="container" >
 
           <!-- Header -->
           <header class="d-flex flex-wrap py-3 mb-5 border-bottom">
@@ -47,10 +49,8 @@
           require_once('footer.html');
         ?>
       </div>
-    </footer> 
-      <!-- Archivo JS Bootstrap 5 -->
-      <script src="js/jquery-3.6.0.min.js"></script>
-      <script src="boostrap5/js/bootstrap.bundle.min.js"></script>
-      <script src="js/index.js"></script>
+    </footer>
+
+
   </body>
 </html>
