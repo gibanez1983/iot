@@ -26,23 +26,25 @@
 /*primer cuadro mapa*/
 #grilla_map{
     width: 75%;
-    height: auto;
     align-items: center;
     justify-content: center;
     padding-top: 20px;
+
+  margin-left:auto;
+  margin-right: auto;
 }
 
-.col-6.mapa, .imapa{
+/*.col-6.mapa,*/ .imapa{
   width: 556px;
   height: 358px;
   padding-right: 15px;
   padding-bottom: 15px;
 }
-
+/*
 .col-6.cont{
   width: 457px;
   height: 288px;
-}
+}*/
 .card_informa_c.contact,#acontact {
   width: 457px;
   height: 64px;
@@ -93,11 +95,13 @@ text-decoration-line: none;
 
 /*formulario mensaje */
 #cont_mail{
-  width: 80%;
-  height: auto;
+  width: 70%;
   padding-top: 20px;
 display:flex;
   justify-content: center;
+margin-left:auto;
+margin-right: auto;
+
 
 }
 /*titulo mensaje */
@@ -157,4 +161,37 @@ color: #5C6070;
   font-size: 14px;
   line-height: 20px;
   align-content: center;
+}
+@media (max-width: 767px) {
+
+
+}
+@media screen and ((min-width: 230px)and (max-width: 620px)) {
+  .f_titulo_contacto{
+    height: 110px;
+  }
+  .titulo_contacto{
+    width: 80%;
+    height: 62px;
+    padding-top: 35px;
+    padding-left: calc(30% - 70%/2);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .imapa{
+    width: 100%;
+  }
+  .row.cont{
+    width: 70%;
+  }
+  #grilla_map{
+    background-color: red;
+    display: flex;
+    height: 700px;
+    margin-top: 0;
+  }#cont_mail{
+background-color: green;
+    display: flex;
+  }
 }
