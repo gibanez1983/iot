@@ -84,7 +84,7 @@
 }
 /*titulo titulo_ml*/
 .titulo_ml{
-  position: flex;
+/*  position: flex;*/
   width: 1128px;
   height: 52px;
   padding-left: calc(50% - 1128px/2);
@@ -126,12 +126,11 @@ padding-top: 20px;
   float: left;
 padding-right:  15px;
 
- vertical-align: middle;
 }
 
 .text_art_g{
 
-  width:300px;
+  width:290px;
 
   font-family: 'Nunito';
   font-style: normal;
@@ -140,4 +139,98 @@ padding-right:  15px;
   line-height: 26px;
   letter-spacing: -0.18px;
   color: #2D2926;
+  display: flex;
+  align-items: center;
+}
+/*seccion confian*/
+.div_confia{
+
+  width: 100%;
+  height: 420px;
+margin-top:  30px;
+text-align: center;
+display: flex;
+  background: #A61E2F;
+}
+.titulo_confia{
+  width: 100%;
+  height: 108px;
+padding-top: 30px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  display: flex;
+position:static;
+  letter-spacing: -0.03em;
+
+  color: #F8F7F6;
+}
+.carouselExampleControls{
+  margin-top: 30px;
+}
+.card.confia{
+  background-color: #A61E2F;
+  padding-bottom: 15px
+}
+.d-block.w-40{
+  width: 40%;
+}
+/*<!--servicio de med lab -->*/
+.div_servmedlab{
+  padding-top: 0px;
+  height: auto;
+  width: 100%;
+  height: 718px;
+}
+.img_servmedlab{
+  width: 477px;
+  height: 718px;
+  float:left;
+  margin-top: 0;
+  padding-right:  79px;
+}
+.titulo_servmedlab{
+  width: 888px;
+  height: 108px;
+  padding-top: 30px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.03em;
+
+  color: #A61E2F;
+}
+.titulo_servmedlab2{
+  width: 888px;
+  height: 79px;
+  padding-top: 30px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+
+  color: #2D2926;
+}
+.texto_servmedlab{
+  width: 644px;
+  height: 436px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.18px;
+padding-top: 30px;
+padding-left: 120px;
+  color: #2D2926;
+}
+.p_sml{
+  margin-bottom: 10px;
+
 }
