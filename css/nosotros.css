@@ -1,15 +1,48 @@
-/*.nos_imagen_fondo{
-width: 100%;
-height: 720px;
-margin-left: 0px;
-margin-top: 0px;
+
+.imagen_general{
+  width: 100%;
+  height: 720px;
 }
-*/
+.imagen_fondo{
+  width: 100%;
+  height: 720px;
+  
+  }
+.nosotros{
+  position: absolute;
+  width: 154px;
+  height: 48px;
+  top: 620px;
+  left: 7.5%;
+  background-color:#06423A;
+  color: #fff;
+  font-size:20px;
+  font-family: 'Nunito';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nosotros p{
+  margin-bottom: 0;
+}
+
+.texto_principal{
+  position: absolute;
+  top: 680px;
+  left: 7.5%;
+  width: 50%;
+  height: 100px;
+  color:#EEF3F0;
+}
+.texto_principal h1{
+  margin: 0;
+  font-size: 2.5em;
+}
 .nos_imagen_vector{
   /* Vector */
   position: absolute;
   width: 84%;/*1152px;*/
-  height: 202.5px;
+  height: 196px;
   top: 605px;
   left: 0px;
 
@@ -26,9 +59,18 @@ margin-top: 0px;
   left: 70%;
 }
 .row.cuadros{
-  width:80%;
-  padding-top: 60px;
-  margin-left: 10%;
+  margin: 0 auto;
+  width:85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor_cuadros{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px 10px 30px 0px;
 }
 .cuadros_texto{
   width: 330px;
@@ -41,29 +83,51 @@ line-height: 26px;
 letter-spacing: -0.18px;
 color: #000000;
 }
-.text-40{
-  position: absolute;
-  width: 154px;
-  height: 26px;
-  padding-left: 90px;
-  top: 910px;
 
+.card-img-top .cuadro_rojo{
+  background-color: #A61E2F;
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15%;
+  padding: 40px 20px 20px 20px;
+  border-radius: 5px;
+}
+
+.card{
+  width: 25rem;
+  border: none;
+}
+.card-body{
+  padding: 1rem 0;
+}
+
+
+.text-40{ 
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 700;
   font-size: 128px;
   line-height: 26px;
   letter-spacing: -0.18px;
-
+  color: #F8F7F6;
+}
+.text-35{
+  height: 30px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 26px;
+  letter-spacing: -0.18px;
   color: #F8F7F6;
 }
 .text-tray{
-  position: absolute;
-  width: 240px;
   height: 26px;
-  padding-left: 100px;
-  top: 980px;
-
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
@@ -73,22 +137,7 @@ color: #000000;
 
   color: #F8F7F6;
 }
-.text-35{
-  position: absolute;
-  width: 230px;
-  height: 26px;
-  padding-left: 40px;
-  top: 910px;
 
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 128px;
-  line-height: 26px;
-  letter-spacing: -0.18px;
-
-  color: #F8F7F6;
-}
 .text-esp{
   position: absolute;
   width: 340px;
@@ -139,20 +188,24 @@ color: #000000;
 }
 /*Historia*/
 .historia{
-  padding-top: 60px;
+  width: 100%;
+  height: 714px;
+  display: flex;
+  margin-top: 40px;
+}
+.texto_historia{
+  width: 40%;
+}
+.imagen_historia{
+  width: 60%;
 }
 .img_h{
-  width: 725px;
-   height: 714px;
-float:right;
+  width: 100%;
+  height: 700px;
 }
 .titulo_h{
-  position: absolute;
   width: 461px;
   height: 144px;
-  left: 71px;
-  top: 1482px;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -160,32 +213,33 @@ float:right;
   line-height: 72px;
   letter-spacing: -0.03em;
   color: #000000;
+  padding: 25px 10px;
 }
 .texto_h{
-  position: absolute;
   width: 456px;
   height: 417px;
-  left: 76px;
-  top: 1655px;
-
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: -0.18px;
-
   color: #000000;
+  padding: 25px 10px;
 }
 /*Misiones Valor Vision*/
 .row.mvv{
   width:80%;
   padding-top: 70px;
   margin-left: 10%;
+  padding: 25px 25px;
 }
 .col-md-3.opc{
-    width:300px;
-    padding-right:  24px;
+  width:300px;
+  padding: 40px 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
   border-radius: 8px;
   background: var(--neutral-98, #F8F7F6);
   box-shadow: inset 0px 4px 58px 150px rgba(0, 0, 0, 0.08);
@@ -194,6 +248,66 @@ float:right;
   width:100px;
   margin-left: 80px;
 
+}
+
+.section_docencia{
+  width: 100%;
+  height: 1000px;
+  
+}
+.contenido_docencia{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  padding: 30px;
+}
+/*Docencia e Investigacion*/
+.titulo_docencia{
+  width: 90%;
+  height: 72px;
+  
+}
+
+.titulo_d{
+  width: 90%;
+  height: 72px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #000000;
+  
+}
+
+.contenido_docencia2{
+ width: 100%;
+  height: 600px;
+  display: flex;
+}
+.row_texto{
+  width: 50%;
+  height: 450px;
+  padding: 20px 0px 0px 20px;
+}
+
+.row_texto2{
+  width: 50%;
+  height: 450px;
+  
+}
+
+.row_imagen{
+  width: 50%;
+  height: 450px;
+  padding-top: 25px;
+}
+.row_imagen2{
+  width: 50%;
+  height: 450px;
+  padding-left: 40px;
 }
 .text-center.mision,.text-center.vision,.text-center.valor{
   width: 269px;
@@ -231,45 +345,42 @@ float:right;
   align-self: stretch;
   flex-grow: 0;
 }
-/*Docencia e Investigacion*/
-.titulo_d{
-  position:static;
-  width: 90%;
-  height: 72px;
-padding-top: 50px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 72px;
-  line-height: 72px;
-  text-align: center;
-  letter-spacing: -0.03em;
-
-  color: #000000;
-}
 
 .row.d1{
 	padding-top: 80px;
  }
 
 .titulo_d1{
-  width: 552px;
-  height: 44px;
-
+  width: 100%;
+  height: 40px;
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 44px;
   letter-spacing: -0.03em;
-
   color: #000000;
+  padding: 0px 0px 0PX 50PX;
+}
+
+.row_texto .col p{
+  width: 90%;
+  height: 150px;
+  padding: 25px 0px 0px 10px
+}
+.col{
+  width: 100%;
+  height: 450px;
+}
+
+.row_texto .col .p_segundo{
+  padding: 25px 0px 0px 10px;
 }
 .img_d1{
-  width: 543px;
-  height: 362px;
+  width: 85%;
+  height: 400px;
   float:right;
-  display: inline;
+  padding-top: 25px;
 }
 .texto_d1{
   width: 552px;
@@ -294,11 +405,11 @@ padding-top: 50px;
   height: 370px;
   float:left;
   display: inline;
+  padding-left: 50px;
 }
 .texto_d2{
   width: 552px;
-  height: 362px;
-
+  float:left;
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
@@ -307,4 +418,195 @@ padding-top: 50px;
   letter-spacing: -0.18px;
 
   color: #000000;
+}
+
+
+
+
+
+@media screen and ((min-width: 230px)and (max-width: 620px)){
+  .imagen_general {
+    height: 200px;
+  }
+
+  .imagen_fondo {
+    height: 220px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .nos_imagen_vector {
+    height: 61px;
+    top: 240px; 
+  }
+  .imagen_40 {
+    width: 50px;
+    height: 18px;
+    top: 248px;
+    left: 65%;
+  }
+  .nosotros {
+    width: 50px;
+    height: 10px;
+    top: 250px;
+    font-size: 6px;
+  }
+  .texto_principal h1 {
+    font-size: 11px;
+  }
+  .texto_principal {
+    top: 262px;
+    left: 7.5%;
+    width: 50%;
+    height: 35px;
+  }
+
+  .row .cuadros{
+    padding: 40px 0px 0px 0px;
+  }
+  .contenedor_cuadros{
+    flex-direction: column;
+    padding: 40px 0px 0px 0px;
+  }
+
+  .card{
+    width: 19rem;
+  }
+  .card-img-top .cuadro_rojo{
+    height: 150px;
+    
+  }
+  .text-40{
+    font-size: 100px;
+  }
+  .text-tray{
+    font-size: 14px;
+  }
+
+  .row.cuadros{
+    width: 80%;
+  }
+  .text-35{
+    font-size: 90px;
+  }
+
+  .card-text{
+    font-size: 12px;
+  }
+
+  .historia{
+    display: flex;
+    flex-direction: column;
+  }
+  .texto_historia {
+    width: 100%;
+  }
+  .titulo_h{
+    font-size: 32px;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    height: auto;
+  }
+
+  .texto_h{
+    font-size:12px;
+    width: 100%;
+    height: 410px;
+    padding: 0px 40px 10px;
+  }
+
+  .imagen_historia{
+    height: 200px;
+    width: 90%;
+  }
+
+  .img_h{
+    width: 100%;
+    height: 200px;
+  }
+  .row.mvv{
+    gap: 20px;
+  }
+  .cuadros_texto_m{
+    width: 100%;
+    font-size: 12px;
+    height: auto;
+  }
+  .text-center.mision, .text-center.vision, .text-center.valor{
+    width: 100%;
+    font-size: 32px;
+  }
+
+  .img-fluid.img_m {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .col-md-3.opc{
+    gap: 0;
+  }
+
+  .section_docencia {
+    height: auto;
+  }
+  .titulo_d{
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    line-height: 32px;
+    padding-top: 20px;
+  }
+  .contenido_docencia{
+    flex-direction: column;
+    height: auto;
+  }
+  .contenido_docencia2{
+    flex-direction: column;
+    height: 680px;
+    gap: 20px;
+  }
+  .row_texto {
+    width: 100%;
+    height: 600px;
+  }
+  .col {
+    text-align: center;
+    height: 550px;
+  }
+  .titulo_d1{
+    padding: 0;
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .row_texto .col p {
+    height: 260px;
+  }
+
+  .row_imagen {
+    width: 100%;
+    height: 250px;
+    padding-top: 0;
+  }
+
+  .img_d1 {
+    width: 100%;
+    height: 250px;
+  }
+  .row_imagen2 {
+    width: 100%;
+    height: 250px;
+    padding-left: 30px;
+  }
+  .img_d2 {
+    width: 92%;
+    height: 250px;
+    padding-left: 0;
+  }
+  .row_texto2 {
+    width: 100%;
+    text-align: center;
+  }
+  .texto_d2 {
+    width: 75%;
+    float: inherit;
+  }
 }
