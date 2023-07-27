@@ -50,7 +50,33 @@
         ?>
       </div>
     </footer>
+    <script >
+    /*var li = document.getElementsByTagName("li"),
+    forEach = Array.prototype.forEach;
+    window.addEventListener("click", function(e){
+    forEach.call(li, function(a){ alert(a.className);
+        a.className = a === e.target ? "activo" : "";
+      //  a.className = "activo";
+      });
+  }, false);*/
 
+  /*
+  $(document).ready(function () {
+        var url = window.location;
+        $('ul.navbar-nav a[' + url + ']').parent().addClass('activo');
+
+        $('ul.navbar-nav a').filter(function () {
+            return this.href == url;
+        }).parent().addClass('activo').parent().parent().addClass('activo');
+    });*/
+    $(function(){
+          $('.navbar-nav li a').filter(function(){return this.href==location.href}).parent().addClass('activo').siblings().removeClass('activo')
+          $('.navbar-nav li a').click(function(){
+              $(this).parent().addClass('activo').siblings().removeClass('active')
+          })
+      })
+
+    </script>
 
   </body>
 </html>
