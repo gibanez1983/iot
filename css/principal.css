@@ -175,6 +175,10 @@ margin-right:auto;
   letter-spacing: -1.08px;
 }
 
+.card {
+  width: 40rem;
+}
+
 .btn-danger{
   background-color: #D21C1C !important;
 }
@@ -312,7 +316,6 @@ letter-spacing: -0.18px;
   padding: 1em;
 }
 .card {
-  margin: 0 0.5em;
   border: none;
 }
 .carousel-control-prev,
@@ -476,6 +479,9 @@ letter-spacing: -0.18px;
 
   .titulo_carrusel{
     font-size: 18px;
+  }
+  .card {
+    width: 25rem;
   }
 
 

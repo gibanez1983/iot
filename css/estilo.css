@@ -48,6 +48,12 @@
   margin: 0 auto;
 }
 
+.nav_responsibe{
+  background-color: aqua;
+  width: 100%;
+  height: 50px;
+}
+
 a{
   text-decoration-line: none;
   color: #DDDDDD;
@@ -132,6 +138,7 @@ height: 720px;
 margin-left: 0px;
 margin-top: 0px;
 }
+
 /*
 .imagen_fondo{
   display:flex;
@@ -571,9 +578,10 @@ margin-top: 0px;
     display: none;
   }
 
-}
-@media screen and ((min-width: 230px)and (max-width: 620px)) {
   .logo_header{
-    margin-right: 120px;
+    margin-right: 5%;
   }
+  
+
 }
+
