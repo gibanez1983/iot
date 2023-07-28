@@ -1,11 +1,8 @@
 .imagen_fondo_serv_prest{
-width: 100%;
-height: 720px;
-margin-left: 0px;
-margin-top: 0px;
-
-
-  filter: blur(4px);
+  width: 100%;
+  height: 720px;
+  flex-shrink: 0;
+  filter: blur(2.5px);
 }
 .serv_prest_imagen_vector{
   /* Vector */
@@ -14,7 +11,7 @@ margin-top: 0px;
   align-items: flex-start;
   padding: 10px;
   gap: 10px;
-
+  color: white;
   position: absolute;
   width: 284px;
   height: 48px;
@@ -38,21 +35,76 @@ margin-top: 0px;
   flex: none;
   order: 0;
   flex-grow: 0;
-}/*
-.serv_prest_imagen_vector2{
+}
+.guardia{
+  width: 100%;
+  height: 320px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 10px;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.guardia_dos{
+  background-color: #06423A;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  position: absolute;
-  width: 284px;
-  height: 48px;
-  left: 76px;
-  top: 176px;
-  background: #06423A;
-}*/
+.guardia1{
+  width: 50%;
+  height: 300px;
+  display: flex;
+  padding-top: 20px;
+}
+.guardia2{
+  width: 50%;
+  height: 300px;
+  padding-top: 20px;
+}
+.guardia3{
+  width: 50%;
+  height: 300px;
+  padding: 20px;
+}
+.cuadro1{
+  display: flex;
+  width: 552px;
+  padding: 32px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 8px;
+  background-color: #F8F7F6;
+}
+.terapia{
+  background-color: #2D2926;
+  width: 100%;
+  height: 370px;
+  display: flex;
+}
+.terapia_imagen{
+  background-color:aqua;
+  width: 50%;
+  height: 370px;
+  padding-left: 7%;
+}
+.terapia_texto{
+  background-color:blueviolet;
+  width: 50%;
+  height: 370px;
+  padding-left: 20px;
+  text-align: left;
+}
+.titulo_terapia{
+  background-color:burlywood;
+  width: 100%;
+}
+
+.terapia .titulo_terapia{
+  justify-content:flex-start;
+}
 .desc_img_v2{
   position: absolute;
 width: 552px;
@@ -79,28 +131,26 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding-top: 80px;
 }
 .t_guard{
-  width: 163px;
+  width: 100%;
   height: 52px;
-
+  padding-left: 12%;
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
   line-height: 52px;
   display: flex;
-  align-items: center;
   letter-spacing: -0.03em;
 
   color: #2D2926;
 }
 .img_guard{
-  width: 457px;
-  height: 256px;
+  width: 70%;
+  height: 270px;
 }
 .texto_guard{
-  width: 456px;
+  width: 75.5%;
   height: 96px;
-
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
@@ -108,6 +158,10 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   line-height: 24px;
   letter-spacing: -0.26px;
   color: #2D2926;
+}
+.titulo_shock{
+  color:#A61E2F;
+  width: 100%;
 }
 /*.col.otroo{
   width: 80px;
@@ -190,12 +244,17 @@ justify-content:center;
   padding-top: 100px;
 }
 .img_tip{
-  width: 555px;
+  width: 100%;
   height: 370px;
 }
 .t_tip{
-  width: 549px;
-  height: 124px;
+  font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 62px;
+    letter-spacing: -0.03em;
+    color: #2D2926;
 }
 /*internacion*/
 .row.interna{
@@ -287,30 +346,32 @@ justify-content:center;
 }
 @media screen and ((min-width: 230px)and (max-width: 620px)) {
   .imagen_fondo_serv_prest{
-    height: 320px;
+    height: 220px;
+    filter: blur(1.5px);
   }
+  
   .serv_prest_imagen_vector{
-    width: 184px;
-    height: 30px;
+    width: 110px;
+    height: 25px;
     left: 32px;
-    top:140px;
+    top: 140px;
+    font-size: 6px;
+    padding: 7px;
   }
   .desc_img_v{
-    width: 267px;
-    height: 28px;
-    font-size: 13px;
-
+    font-size: 6px;
   }
+ 
   .desc_img_v2{
-    width: 252px;
-    height: 216px;
+    width: 150px;
+    height: auto;
     left: 36px;
-    top: 180px;
-    font-size: 32px;
-    line-height: 38px;
+    top: 170px;
+    font-size: 18px;
+    line-height: 18px;
   }
   .texto_guard{
-    width: 420px;
+    width: 100%;
     padding-bottom: 150px;
   }
   #otro_1, #otro_2{
@@ -327,5 +388,38 @@ justify-content:center;
   }
   .img_guard,.img_tip,.img_interna,.img_cirug,.img_transp,.img_imag,.img_onco,.img_trauma,.img_lab{
     width: 100%;
+  }
+
+  .guardia{
+    flex-direction: column-reverse;
+    height: 600px;
+    margin-top: 10px;
+    gap: 20px;
+  }
+  .guardia1{
+    width: 90%;
+    height: auto;
+  }
+  .guardia2{
+    width: 100%;
+    height: auto;
+  }
+  .cuadro1{
+    width: 90%;
+    padding: 10px 15px;
+    gap: 2px;
+  }
+  #titulo_otro{
+    font-size: 18px;
+    line-height: 20px;
+  }
+  ul {
+    font-size: 14px;
+  }
+  .guardia3{
+    width: 100%;
+  }
+  .t_guard {
+    padding: 0;
   }
 }
