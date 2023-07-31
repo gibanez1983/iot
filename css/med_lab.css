@@ -16,12 +16,6 @@
 }
 /*<!-- titulo y texto rectangulo_izq-->*/
 .p_titulo_izq{
-  position: absolute;
-  width: 552px;
-  height: 144px;
-  left: 76px;
-  top: 120px;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -32,12 +26,6 @@
   color: var(--neutral-98);
 }
 .p_texto_izq{
-  position: absolute;
-  width: 453px;
-  height: 295px;
-  left: 79px;
-  top: 304px;
-
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
@@ -87,9 +75,8 @@
 /*  position: flex;*/
   width: 1128px;
   height: 52px;
-  padding-left: calc(50% - 1128px/2);
 padding-top: 30px;
-padding-bottom: 30px;
+padding-bottom: 60px;
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 700;
@@ -118,6 +105,38 @@ padding-bottom: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
 padding-top: 20px;
+}
+#col_car_art1{
+  width: 360px;
+  height: 152px;
+  /*left: 76px;
+  top: 853px;*/
+
+  margin-bottom: 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+padding-top: 20px;
+}
+#col_car_art2{
+  width: 360px;
+  height: 152px;
+  /*left: 76px;
+  top: 853px;*/
+
+  margin-bottom: 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+padding-top: 20px;
+}
+
+
+#row_cuadros #col_car_art1{
+  margin-left:20%
+}
+#row_cuadros #col_car_art2{
+  margin-right:20%;
 }
 .img-art{
   width: 100px;
@@ -170,7 +189,7 @@ padding-top: 30px;
 
   color: #F8F7F6;
 }
-.carouselExampleControls{
+/* .carouselExampleControlsImg{
   margin-top: 30px;
 }
 .card.confia{
@@ -182,7 +201,7 @@ padding-top: 30px;
 }
 .carousel-item {
   width: 50%;
-}
+} */
 .d-block.w-30{
   width: 30%;
 }
@@ -242,4 +261,117 @@ padding-left: 120px;
 .p_sml{
   margin-bottom: 10px;
 
+}
+
+.titulo_izq{
+  padding-left: 10%;
+  padding-top: 10%;
+}
+.parrafos{
+  padding-left: 6%;
+  width: 90%;
+}
+#carouselExampleControls{
+  background-color: #A61E2F;
+  height: 300px;
+}
+.marcas{
+  width: 200px;
+  height: 150px;
+  flex-shrink: 0;
+}
+.carousel-inner {
+  padding: 1em;
+  height: 300px;
+}
+.carousel-item{
+  display:flex;
+  gap: 20%;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 25%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+.img-wrapper {
+    max-width: 90%;
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius:15px;
+    margin-bottom: 20px;
+}
+img {
+    max-height: 100%;
+}
+
+
+@media (max-width: 667px) {
+  .img-wrapper {
+    height: 17em;
+  }
+}
+
+@media screen and ((min-width: 230px)and (max-width: 620px)){
+  #row_cuadros #col_car_art1 {
+    margin-left: 0; 
+  }
+  .rectangulo_izq{
+    width: 100%;
+  }
+  .p_titulo_izq{
+    width: 100%;
+    font-size: 42px;
+    line-height: 52px;
+    left: 60px;
+  }
+  .titulo_izq {
+    padding-top: 10%;
+    text-align: center;
+    padding-left:0;
+  }
+  .parrafos {
+    padding-left: 0;
+    text-align: justify;
+    width: 90%;
+  }
+  .titulo_ml{
+    width: 100%;
+    height: auto;
+    padding-top: 0;
+    font-size: 40px;
+    padding-bottom: 0;
+  }
+  .carousel-item{
+    display: block;
+  }
+  .titulo_confia{
+    font-size: 36px;
+  }
+  #img{
+    height: 7em;
+  }
+  
 }

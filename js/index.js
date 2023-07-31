@@ -29,3 +29,4 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 } else {
   $(multipleCardCarousel).addClass("slide");
 }
+
