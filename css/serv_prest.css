@@ -79,31 +79,81 @@
   background-color: #F8F7F6;
 }
 .terapia{
-  background-color: #2D2926;
   width: 100%;
   height: 370px;
   display: flex;
+  margin-top: 4%;
 }
+.internacion{
+  width: 100%;
+  height: 370px;
+  display: flex;
+  margin-top: 5%;
+}
+.transplantes{
+  width: 100%;
+  height: 370px;
+  display: flex;
+  margin-top: 5%;
+}
+.imagenes{
+  width: 100%;
+  height: 450px;
+  display: flex;
+  margin-top: 4%;
+}
+
+.oncologia{
+  width: 100%;
+  height: 570px;
+  display: flex;
+  margin-top:20px;
+}
+
+.text_onco{
+  width: 50%;
+  height: 570px;
+}
+
 .terapia_imagen{
-  background-color:aqua;
   width: 50%;
   height: 370px;
   padding-left: 7%;
 }
 .terapia_texto{
-  background-color:blueviolet;
   width: 50%;
   height: 370px;
-  padding-left: 20px;
   text-align: left;
 }
 .titulo_terapia{
-  background-color:burlywood;
   width: 100%;
+}
+.titulo_onco{
+  width: 100%;
+  padding-left: 13%;
+}
+.textos{
+  width: 85%;
+  padding-left: 20px;
+  margin: 0;
+  margin-top: 20px;
+}
+.lista{
+  width: 100%;
+  padding-left: 17%;
 }
 
 .terapia .titulo_terapia{
   justify-content:flex-start;
+}
+
+.i_texto{
+  width: 50%;
+  height: 370px;
+}
+.i_imagen{
+  width: 50%;
+  height: 370px;
 }
 .desc_img_v2{
   position: absolute;
@@ -216,6 +266,34 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   order: 1;
   flex-grow: 0;
 }
+
+.texto_interna{
+  width: 100%;
+  padding-left: 14%;
+}
+
+.titulo_trans{
+  width: 100%;
+  height: 150px;
+}
+.texto_trans{
+  width: 100%;
+  height: 200px;
+}
+.t_trans{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 62px;
+  letter-spacing: -0.03em;
+  color: #2D2926;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  width: 72%;
+}
+
 #titulo{
   font-family: 'Nunito';
   font-style: normal;
@@ -228,6 +306,18 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   order: 0;
   flex-grow: 0;
 }
+.texto_internacion{
+  padding-left: 14%;
+}
+#internacion_cuadro{
+  margin-bottom: 5%;
+
+}
+#inter_texto{
+  width: 90%;
+  height: 350px;
+}
+
 .row{
   width: 75%;
 margin-left:auto;
@@ -255,6 +345,9 @@ justify-content:center;
     line-height: 62px;
     letter-spacing: -0.03em;
     color: #2D2926;
+    width: 75%;
+    margin: 0;
+    padding-left: 20px;
 }
 /*internacion*/
 .row.interna{
@@ -265,9 +358,10 @@ justify-content:center;
   height: 62px;
 }
 .img_interna{
-  width: 555px;
+  width: 85%;
   height: 370px;
 }
+
 /*cirugia*/
 .row.cirug{
   padding-top: 100px;
@@ -309,8 +403,16 @@ justify-content:center;
   padding-top: 100px;
 }
 .t_onco{
-  width: 651px;
-  height: 124px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 62px;
+  letter-spacing: -0.03em;
+  color: #2D2926;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 .img_onco{
   width: 555px;
@@ -340,10 +442,7 @@ justify-content:center;
   width: 555px;
   height: 370px;
 }
-@media (max-width: 767px) {
 
-
-}
 @media screen and ((min-width: 230px)and (max-width: 620px)) {
   .imagen_fondo_serv_prest{
     height: 220px;
@@ -422,4 +521,116 @@ justify-content:center;
   .t_guard {
     padding: 0;
   }
+
+  .terapia{
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .transplantes{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .terapia_texto {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .t_tip{
+    font-size: 30px;
+    width: 100%;
+    padding-left: 0;
+  }
+  .titulo_terapia{
+    text-align: center;
+  }
+  .texto_tip{
+    font-size: 16px;
+    padding-left: 0;
+  }
+  .terapia_imagen{
+    width: 90%;
+    padding-left: 0;
+    height: 300px;
+  }
+  .img_tip{
+    height: 270px;
+  }
+  .internacion{
+    flex-direction: column;
+    margin-top: 0;
+    height: auto;
+    gap: 20px;
+  }
+  .i_texto{
+    width: 100%;
+    height: 270px;
+  }
+  .titulo_i{
+    text-align: center;
+  }
+  .texto_interna {
+    width: 90%;
+    padding-left: 0;
+  }
+  .i_imagen{
+    width: 90%;
+    height: 270px;
+  }
+  .img_interna {
+    width: 95%;
+    height: 270px;
+  }
+  .textos{
+    width: 90%;
+  }
+  .t_trans{
+    font-size: 28px;
+    line-height: 42px;
+    width: 100%;
+  }
+  .titulo_trans{
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+  .imagenes{
+    flex-direction:column-reverse;
+    height: auto;
+    margin-top: 10%;
+  }
+  #titulo_img{
+    line-height: 30px;
+  }
+  .oncologia{
+    flex-direction:column;
+    height: auto;
+  }
+  .text_onco{
+    width: 100%;
+    text-align: center;
+    height: 700px;
+  }
+  .t_onco{
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .titulo_onco{
+    padding-left: 0;
+  }
+  .lista{
+    padding-left:0;
+  }
+  .texto_internacion {
+     padding-left: 0; 
+  }
+ #i_tras{
+    height: 420px;
+  }
+  #text_laboratorio{
+    width: 90%;
+    height: 320px;
+  }
+  
 }
