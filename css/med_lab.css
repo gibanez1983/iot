@@ -208,16 +208,19 @@ padding-top: 30px;
 /*<!--servicio de med lab -->*/
 .div_servmedlab{
   padding-top: 0px;
-  height: auto;
   width: 100%;
-  height: 718px;
+  height: 650px;
 }
 .img_servmedlab{
   width: 477px;
-  height: 718px;
+  height: 650px;
   float:left;
   margin-top: 0;
   padding-right:  79px;
+}
+.titulos_servicios{
+  width: 100%;
+  height: 718px;
 }
 .titulo_servmedlab{
   width: 888px;
@@ -254,8 +257,8 @@ padding-top: 30px;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: -0.18px;
-padding-top: 30px;
-padding-left: 120px;
+  padding-top: 30px;
+  padding-left: 60px;
   color: #2D2926;
 }
 .p_sml{
@@ -271,27 +274,101 @@ padding-left: 120px;
   padding-left: 6%;
   width: 90%;
 }
-#carouselExampleControls{
-  background-color: #A61E2F;
-  height: 300px;
+
+.tasas{
+  width: 100%;
+  height: 35em;
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  position: relative;
 }
-.marcas{
-  width: 200px;
-  height: 150px;
-  flex-shrink: 0;
+.tasas_cuadro{
+  background-color: #A61E2F;
+  width: 95%;
+  height: 20em;
+  margin:0;
+  display: flex;
+}
+.tasas_izq{
+  width: 50%;
+  height: 15em;
+}
+.tasas_derecha{
+  width: 50%;
+  height: 15em;
+  padding-top: 8%;
+}
+.texto{
+  width: 80%;
+  font-family: Nunito;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 125% */
+  letter-spacing: -0.96px;
+  padding-top: 28px;
+  color:#F8F7F6;
+}
+
+.cuadro_flotante{
+  background-color: crimson;
+  width: 85%;
+  height: 25em;
+  margin: 0;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+}
+.texto_titulo{
+  width: 80%;
+  color: var(--neutro, #2D2926);
+/* Nunito/H4/SM */
+  font-family: Nunito;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px; /* 122.222% */
+  letter-spacing: -1.08px;
+  padding-top: 28px;
+}
+.listas{
+  display:flex;
+  flex-direction: row;
+}
+.lista_derecha{
+  width: 50%;
+  padding-left: 8%;
+}
+.lista_izq{
+  width: 50%;
+}
+.circulo_grande{
+  
+}
+.circulo_grande::before {
+  position:absolute;
+  content:"";
+  top:1%;
+  left:1%;
+  background-Color:#fff;
+  height:98%;
+  width:98%;
+  border-radius:50% 50%;
+}
+.img_circulo{
+  object-fit: cover;
+  width:100%;
+  height:100%;
+  filter:#D8D0CE;
 }
 .carousel-inner {
   padding: 1em;
-  height: 300px;
-}
-.carousel-item{
-  display:flex;
-  gap: 20%;
 }
 .card {
   margin: 0 0.5em;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   border: none;
+  background-color: #A61E2F;
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -306,31 +383,29 @@ padding-left: 120px;
 @media (min-width: 768px) {
   .carousel-item {
     margin-right: 0;
-    flex: 0 0 25%;
+    flex: calc(100%/4);
     display: block;
   }
   .carousel-inner {
     display: flex;
   }
 }
-.img-wrapper {
-    max-width: 90%;
-    height: 8em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius:15px;
-    margin-bottom: 20px;
+.card .img-wrapper {
+  width: 100%;
+  height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:white;
+  margin-bottom: 25px;
+  border-radius: 15px;
 }
-img {
+.card img {
     max-height: 100%;
 }
-
-
-@media (max-width: 667px) {
-  .img-wrapper {
-    height: 17em;
+@media (max-width: 767px) {
+  .card .img-wrapper {
+    height: 7em;
   }
 }
 
@@ -364,14 +439,68 @@ img {
     font-size: 40px;
     padding-bottom: 0;
   }
-  .carousel-item{
-    display: block;
+  .carousel-inner {
+    padding: 2em;
   }
-  .titulo_confia{
-    font-size: 36px;
+
+  .div_servmedlab{
+    display: flex;
+    flex-direction: column;
   }
-  #img{
-    height: 7em;
+  .img_servmedlab{
+    width: 95%;
+    height: 350px;
+    padding-right: 0;
+  }
+
+  .titulo_servmedlab{
+    width: 90%;
+    font-size: 38px;
+    height: auto;
+  }
+
+  .titulo_servmedlab2{
+    width: 90%;
+    height: auto;
+    font-size: 18px;
+  }
+  .texto_servmedlab{
+    width: 90%;
+    height: auto;
+    font-size: 14px;
+    padding-top: 0;
+    padding-left: 15px;
+  }
+  .titulos_servicios{
+    height: auto;
+  }
+  .div_servmedlab {
+    height: auto;
+  }
+  .tasas{
+    height: auto;
+  }
+  .tasas_derecha{
+      width: 99%;
+      height: auto; 
+      padding-top: 0; 
+  }
+  .cuadro_flotante {
+    margin: inherit;
+    height: auto;
+  }
+  .tasas_cuadro{
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .tasas_izq{
+    height: auto;
+    width: 90%;
+  }
+  .texto{
+    width: 90%;
+    font-size: 28px;
   }
   
 }
