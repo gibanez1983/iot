@@ -21,11 +21,11 @@ $body.= '<br><br>'.trim($_POST['inputmensaje']);
                 )
             );*/
             $mail->SMTPAuth = true;
-            $mail->Username = "prescott04@hotmail.com";
-            $mail->Password = "m4rt1n1983";
-            $mail->setFrom('prescott04@hotmail.com', $quien_envia); /*Datos del que envia desde la web*/
+            $mail->Username = "aaa@hotmail.com";
+            $mail->Password = "aaaa";
+            $mail->setFrom('info@sanatorioiot.com.ar', $quien_envia); /*Datos del que envia desde la web*/
 
-            $mail->addAddress('prescott04@gmail.com', 'Sanatorio Integral IOT'); /*Deberian ir datos IOT*/
+            $mail->addAddress('info@sanatorioiot.com.ar', 'Sanatorio Integral IOT'); /*Deberian ir datos IOT*/
             //$mail->addCC("prescott04@hotmail.com");
             $mail->addBCC($email);
 
