@@ -1,8 +1,9 @@
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 	<div class="container">
 		
 			<div class="logo_header"><a class="navbar-brand" href="index.php"><img src="imagenes/logo_iot.png" style="width: 116px;" ></a></div>
+			
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -37,5 +38,72 @@
 
 			</ul>
 		</div>
+
+		<button class="turnos">Turnos</button>  generar el enlaces WhatsApp -->
+	<!-- </div>
+</nav>  -->
+
+<div class="nav">
+	<input type="checkbox" id="nav-check">
+	<div class="nav-header">
+		<div class="nav-title">
+			<img src="imagenes/logo_iot.png" class="logo">
+		</div>
 	</div>
-</nav>
+	<div class="nav-btn">
+		<label for="nav-check">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+	</div>
+	
+	<div class="nav-links">
+			<ul>
+		<!-- <li><a href="#" target="_blank">Home</a></li>
+		<li><a href="#" target="_blank">About</a></li>
+		<li><a href="#" target="_blank">Services</a></li>
+		<li><a href="#" target="_blank">Portfolio</a></li>
+		<li><a href="#" target="_blank">Contact</a></li> -->
+		<li class="nav-item">
+			<a class="nav-link activo"  aria-current="page" href="index.php">Home</a>
+		</li>
+
+		<li class="nav-item">
+			<a class="nav-link" aria-current="page" href="index.php?p=nosotros">Nosotros</a>
+		</li>
+
+		<li class="nav-item">
+			<a class="nav-link" aria-current="page" href="index.php?p=serv_prest">Servicios y prestaciones</a>
+		</li>
+
+		<li class="nav-item">
+			<a class="nav-link" aria-current="page" href="index.php?p=esp_med">Especialidades medicas</a>
+		</li>
+
+		<li class="nav-item">
+			<a class="nav-link" aria-current="page" href="index.php?p=med_lab">Medicina laboral</a>
+		</li>
+
+		<li class="nav-item">
+			<a class="nav-link" aria-current="page" href="index.php?p=contacto">Contacto</a>
+		</li>
+
+		<a class="icon">
+			<samp class="turnos">Turnos</samp>
+		</a>
+			</ul>
+	</div>
+</div>
+
+<script >
+	$(function(){
+		  $('.nav-links li a').filter(function(){return this.href==location.href}).parent().addClass('activo').siblings().removeClass('activo')
+				$('.nav-links li a').click(function(){
+						$(this).parent().addClass('activo').siblings().removeClass('activo')
+				})
+				
+		})
+	</script>
+
+

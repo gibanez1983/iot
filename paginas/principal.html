@@ -1,7 +1,7 @@
 <link href="css/principal.css" rel="stylesheet">
        <!-- imagen de fondo-->
         <div class="img_principal">
-            <img src="imagenes/IMG_1706 1.png" class="imagen_fondo">
+            <img loading="lazy" src="imagenes/home/home1.jpg" class="imagen_fondo">
 
 
             <!-- recuadro en el que van 40 años juntos cuidando de vos-->
@@ -13,23 +13,23 @@
             <div class="texto_de_vos">DE VOS</div>
             <!-- numero 4-->
             <div class="imagen_cuatro">
-                <img class="cuatro" src="imagenes/cuatro.png" >
+                <img  loading="lazy" class="cuatro" src="imagenes/cuatro.png" >
             </div>
             <!-- numero CERO-->
             <div  class="imagen_cero">
-                <img class="cuatro" src="imagenes/cero.png" >
+                <img loading="lazy" class="cuatro" src="imagenes/cero.png" >
             </div>
             <!-- espeiral blanco -->
             <div class="imagen_espiral_dos">
-                <img class="circulo_espiral" src="imagenes/espiral_dos.png" >
+                <img loading="lazy" class="circulo_espiral" src="imagenes/espiral_dos.png" >
             </div>
             <!-- circulo verde -->
             <div class="imagen_circulo_verde">
-                <img class="circulo_verde" src="imagenes/circulo_verde.png" >
+                <img loading="lazy" class="circulo_verde" src="imagenes/circulo_verde.png" >
             </div>
             <!-- espiral bordo -->
             <div class="imagen_espiral_uno">
-                <img class="circulo_rojo" src="imagenes/espiral_uno.svg" >
+                <img loading="lazy" class="circulo_rojo" src="imagenes/espiral_uno.svg" >
             </div>
 
 
@@ -37,15 +37,15 @@
 
         <div class="footer_inicial_flex_container">
             <div class="card_informa">
-                <img src="imagenes/icono_telefono.png" alt="" class="icono">
+                <img loading="lazy" src="imagenes/icono_telefono.png" alt="" class="icono">
                 <samp>(+54) 0376-4440540</samp>
             </div>
             <div class="card_informa">
-                <img src="imagenes/icono_sobre.svg" alt="" class="icono">
+                <img loading="lazy" src="imagenes/icono_sobre.svg" alt="" class="icono">
                 <a href="mailto:info@sanatorioiot.com.ar">info@sanatorioiot.com.ar</a>
              </div>
             <div class="card_informa">
-                <img src="imagenes/icono_ubicacion.svg" alt="" class="icono">
+                <img loading="lazy" src="imagenes/icono_ubicacion.svg" alt="" class="icono">
                 <samp>Bolivar 2376 - Posadas, Mnes.</samp>
             </div>
         </div>
@@ -53,17 +53,18 @@
         <!-- ubicacion en el mapa google-->
 
         <div class="mapa" >
-            <iframe
+            <iframe loading="lazy"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14173.216759201701!2d-55.899682399999996!3d-27.366213899999973!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7888f0aec1b7dd4b!2sIOT%20Sanatorio%20Integral!5e0!3m2!1ses!2sar!4v1671280951032!5m2!1ses!2sar"
                 width="100%" height="553px" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
   <!-- imagenes rotativas / cards -->
-  <div class="col-sm container-flex" id="imagenes_rotativas">
-    <p class="titulo_carrusel mt-3" style="margin: 10px;">
+   <div class="col-sm container-flex" id="imagenes_rotativas">
+    
+     <p class="titulo_carrusel mt-3" style="margin: 10px;">
         Nuestros Servicios
-    </p>
+    </p> 
     <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -111,7 +112,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+             <div class="carousel-item">
                 <div class="card">
                     <div class="img-wrapper"><img src="imagenes/carrusel_3_1.png" class="d-block w-100" alt="..."> </div>
                     <div class="card-body">
@@ -187,9 +188,49 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
-  </div>
-  <div class="div_instagram">
-    <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/7bdfc79c5fb558e694d5a6e4d2be4b0c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-  </div>
+    </div>  
+    <!-- <div class="carousel">
+        <div class="carousel__contenedor">
+            <button aria-label="Anterior" class="carousel__anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="carousel__lista">
+                <div class="carousel__elemento">
+                    <img src="imagenes/carrusel_5_1.png"   alt="...">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="carousel__elemento">
+                    <img src="imagenes/carrusel_5_2.png"   alt="...">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="carousel__elemento">
+                    <img src="imagenes/carrusel_4_2.png"   alt="...">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="carousel__elemento">
+                    <img src="imagenes/carrusel_5_2.png"   alt="...">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="carousel__elemento">
+                    <img src="imagenes/carrusel_5_2.png"   alt="...">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="carousel__elemento">
+                    <img src="imagenes/carrusel_4_2.png"   alt="...">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <button aria-label="Siguiente" class="carousel__siguiente">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        <div role="tablist" class="carousel__indicadores">
+
+        </div>
+    </div>  -->
+   </div>  
+   <div class="div_instagram">
+     LightWidget WIDGET <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/7bdfc79c5fb558e694d5a6e4d2be4b0c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+  </div> 
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 <script src="js/index.js"></script>

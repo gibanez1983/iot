@@ -9,7 +9,9 @@
     margin-top: 0px;
   }
 } */
-
+.cuerpo{
+  background-color:#dcdcdc;
+}
 .imagen_espiral_uno{
   width: 134.52px;
   height: 134.52px;
@@ -176,7 +178,8 @@ margin-right:auto;
 }
 
 .card {
-  width: 40rem;
+  width: 35rem;
+  background-color:#dcdcdc;
 }
 
 .btn-danger{
@@ -312,21 +315,102 @@ letter-spacing: -0.18px;
 #imxx{
   width: 500px;
 }
-.carousel-inner {
+/* .carousel-inner {
   padding: 1em;
 }
+
 .card {
   border: none;
 }
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: #e1e1e1;
-  width: 6vh;
-  height: 6vh;
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
+} */
+
+/* .carousel__contenedor{
+  position: relative;
+  background-color:#dcdcdc;
 }
+.carousel__anterior,
+.carousel__siguiente{
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top:calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align:center;
+  background:none;
+  color: #b10707;
+  opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover{
+  opacity: 100%;
+}
+.carousel__anterior{
+  left:30px;
+}
+.carousel__siguiente{
+  right:30px;
+}
+
+.carousel__lista{
+  overflow: hidden;
+}
+.carousel__elemento{
+  text-align: center;
+}
+
+.carousel__indicadores .glider-dot{
+  display: block;
+  width: 30px;
+  height: 4px;
+  background:#D21C1C;
+  opacity: .2;
+  border-radius: 0;
+} */
+
+/* .carousel__indicadores .glider-dot:hover{
+  opacity: .5;
+}
+
+.carousel__indicadores .glider-dot:active{
+  opacity: .1;
+} */
+.carousel{
+  background-color:#dcdcdc;
+}
+
+.carousel-control-prev-icon{
+  width: 3rem;
+  height: 3rem;
+  background-color: #a7a7a7;
+}
+
+.carousel-control-next-icon{
+  width: 3rem;
+  height: 3rem;
+  background-color: #a7a7a7;
+}
+
+.carousel-control-prev{
+  width: 5%;
+}
+.carousel-control-next{
+  width: 5%;
+}
+
+#imagenes_rotativas{
+  background-color: #dcdcdc;
+}
+
+
 @media (min-width: 768px) {
   .carousel-item {
     margin-right: 0;
@@ -348,11 +432,11 @@ letter-spacing: -0.18px;
 .card img {
     max-height: 100%;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .card .img-wrapper {
     height: 17em;
   }
-}
+} */
 @media screen and ((min-width: 230px)and (max-width: 620px)) {
 
   .img_principal {
@@ -481,7 +565,7 @@ letter-spacing: -0.18px;
     font-size: 18px;
   }
   .card {
-    width: 25rem;
+    width: 18rem;
   }
 
 

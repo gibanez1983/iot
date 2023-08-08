@@ -26,21 +26,34 @@
   margin: 0 auto;
 
 }
-.activo {
-   font-weight: bold;
-   font-size: 16px;
-   color: white; text-shadow: black 0.1em 0.1em 0.2em;
-   -webkit-transition-property: all;
-    -webkit-transition-duration: 1s;
-    transition-property: all;
-    transition-duration: 1s;
- }
-.img_principal {
+/* .nav-link{
+  font-size: 18px;
+} */
+
+.turnos{
+  padding: 17px 24px;
+  align-items: center;
+  border-radius: 4px;
+  background: var(--principal-3, #F6ECED);
+  color: var(--principal-1, #A61E2F);
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px; /* 87.5% */
+  border: none;
+}
+
+ .img_principal {
   width: 100%;
   height: 720px;
   margin-left: 0px;
-  margin-top: 0px;
-}
+  margin-top: 0px; 
+ 
+} 
 
 .cuerpo{
   margin-top: 0px;
@@ -48,17 +61,17 @@
   margin: 0 auto;
 }
 
-.nav_responsibe{
+/* .nav_responsibe{
   background-color: aqua;
   width: 100%;
   height: 50px;
-}
+} */
 
-a{
+ a{
   text-decoration-line: none;
   color: #DDDDDD;
 }
-.navbar{ margin: 0 auto;
+/*.navbar{ margin: 0 auto;
     background: var(--primary)!important;
     display: flex;
     position: fixed;
@@ -79,7 +92,7 @@ a{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(5px);
 
-}
+} */
 samp {
   font-weight: bold;
   color: #DDDDDD;
@@ -103,7 +116,7 @@ samp {
   position: relative;
 }
 
-.custom-navbar-nav li a:before {
+/* .custom-navbar-nav li a:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -131,7 +144,7 @@ samp {
 
 .custom-navbar-nav li.active a:before {
   width: calc(100% - 16px);
-}
+} */
 .imagen_fondo{
 width: 100%;
 height: 720px;
@@ -156,30 +169,34 @@ margin-top: 0px;
 
 .footer{
     background: var(--primary)!important;
-  /* position: absolute;*/
-    height: 300px;
-    width: 100%;
+  /* position: absolute;
+    height: 400px;*/
+    width: auto;
 
     /*bottom: 0px;*/
 }
 .footer-contenido{
-  height: 280px;
-  width: 100%;
+  width: auto;
+  display: flex;
 }
 
 .footer-img{
-  margin-top:15px;
+  margin-top: 51px;
   width:100%;
   height:80px;
 }
-.img_f{
-  width: 136px;
-  height:80px;
+.img_f1{
+  width: 110px;
+  height:auto;
+}
+.img_f2{
+  width: 110px;
+  height: 60px;
 }
 .footer-data{
-  width: 100%;
-  height: 176px;
-  display: flex;
+  width: auto;
+  display: flex; 
+  justify-content: center;
 }
 /*.footer-texto1{
   width: 40%;
@@ -187,22 +204,25 @@ margin-top: 0px;
   margin: 0;
 }*/
 .footer-texto2{
-  width: 25%;
-  color: #DDDDDD;
+   /* width: 50%;
+   height: 200px; */
+  /*color: #DDDDDD;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 auto; */
 }
 .footer-texto3{
-  width: 25%;
-  color: #DDDDDD;
+  /* width: 50%;
+  height: 200px; */
+  /* width: 25%;
+  color: #DDDDDD; */
 }
 /*
 .redes{
-  width: 100%;
-  height: 30px;
+  width: auto;
   display: flex;
-  gap: 23px
+  gap: 23px;
+  justify-content: center;
 }
 
 .redes p{
@@ -277,6 +297,13 @@ margin-top: 0px;
  margin-top: 15px;
 }
 
+.footer-link-contactos{
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+
 
 .footer-contacto{
   font-family: 'Nunito';
@@ -331,12 +358,35 @@ margin-top: 0px;
   height: 24px;
 }
 
+.imagenes_40{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
 
 
-@media screen and ((min-width: 620px)and (max-width: 780px)) {
 
-  .imagen_fondo {
+@media screen and ((min-width: 620px)and (max-width: 990px)) {
+
+  .footer-contenido {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .imagenes_40{
+    width: 100%;
+    gap: 20px;
+  }
+
+  .footer-link-contactos{
+    width: auto;
+    gap: 50px;
+  }
+
+  /* .imagen_fondo {
     height: 320px;
     margin-left: 0px;
     margin-top: 0px;
@@ -421,10 +471,9 @@ margin-top: 0px;
     height: 80px;
     top: 180px;
     left: 73px;
-}
+} */
 
 }
-
 
 
 @media screen and ((min-width: 230px)and (max-width: 620px)) {
@@ -557,11 +606,12 @@ margin-top: 0px;
   .footer-img{
     display: flex;
     justify-content: center;
+    width: 100%
   }
 
   .img_f {
-    width: 145px;
-    height: 60px;
+    width: 120px;
+    height: 50px;
   }
   .footer-data{
     flex-direction: column;
@@ -581,6 +631,7 @@ margin-top: 0px;
   .logo_header{
     margin-right: 5%;
   }
+  
 
 
 }
