@@ -181,9 +181,9 @@ margin-top: 0px;
 }
 
 .footer-img{
-  width:auto;
-  display: flex;
-  gap: 25px;
+  margin-top: 51px;
+  width:100%;
+  height:80px;
 }
 .img_f1{
   width: 110px;
@@ -198,11 +198,11 @@ margin-top: 0px;
   display: flex; 
   justify-content: center;
 }
-.footer-texto1{
+/*.footer-texto1{
   width: 40%;
   color: #DDDDDD;
   margin: 0;
-}
+}*/
 .footer-texto2{
    /* width: 50%;
    height: 200px; */
@@ -217,7 +217,7 @@ margin-top: 0px;
   /* width: 25%;
   color: #DDDDDD; */
 }
-
+/*
 .redes{
   width: auto;
   display: flex;
@@ -245,7 +245,7 @@ margin-top: 0px;
 .instagram{
   width: 20px;
   height: 20px;
-}
+}*/
 
 
 .footer-links{
@@ -631,18 +631,7 @@ margin-top: 0px;
   .logo_header{
     margin-right: 5%;
   }
-
-  .imagenes_40{
-    width: 100%;
-    gap: 25px;
-  }
-
-  .footer-link-contactos{
-    display: none;
-  }
-
   
-  
+
 
 }
-
