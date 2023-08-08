@@ -410,6 +410,14 @@ letter-spacing: -0.18px;
   background-color: #dcdcdc;
 }
 
+.div_instagram{
+  width: 90%;
+}
+
+.lightwidget__btn{
+  background-color:blueviolet;
+}
+
 
 @media (min-width: 768px) {
   .carousel-item {
