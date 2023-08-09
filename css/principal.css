@@ -165,7 +165,7 @@ left: 280.40px;
 .titulo_carrusel{
  display: block;
  margin-left:auto;
-margin-right:auto;
+ margin-right:auto;
   color: var(--neutro, #2D2926);
   text-align: center;
   /* Nunito/H4/B */
@@ -175,6 +175,7 @@ margin-right:auto;
   font-weight: 700;
   line-height: 44px;
   letter-spacing: -1.08px;
+  margin-top: 20px;
 }
 
 .card {
@@ -383,7 +384,7 @@ letter-spacing: -0.18px;
 .carousel__indicadores .glider-dot:active{
   opacity: .1;
 } */
-.carousel{
+/* .carousel{
   background-color:#dcdcdc;
 }
 
@@ -417,7 +418,17 @@ letter-spacing: -0.18px;
 .lightwidget__btn{
   background-color:blueviolet;
 }
+.card .img-wrapper {
+  max-width: 100%;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.card img {
+  max-height: 100%;
+}
 
 @media (min-width: 768px) {
   .carousel-item {
@@ -428,19 +439,22 @@ letter-spacing: -0.18px;
   .carousel-inner {
     display: flex;
   }
-}
-.card .img-wrapper {
-    max-width: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  .imagen_vector{
+    width: 350px;
+    height: 250px;
+  }
+} */
+
+.container-flex{
+  width: 90%;
 }
-.card img {
-    max-height: 100%;
+.div_instagram{
+  width: 90%;
+  margin-top: 5%;
 }
-/* @media (max-width: 767px) {
+
+/* @media (max-pxwidth: 767px) {
   .card .img-wrapper {
     height: 17em;
   }

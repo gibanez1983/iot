@@ -18,6 +18,10 @@
      <link href="css/estilo.css" rel="stylesheet"> 
     <!-- Favicon -->
     <link rel="icon" href="imagenes/favicon.ico">
+     <!--=============== SWIPER CSS ===============-->
+     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
   </head>
   <body>
@@ -58,6 +62,10 @@
           })
       })
     </script> -->
-   
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
   </body>
 </html>
