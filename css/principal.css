@@ -454,11 +454,105 @@ letter-spacing: -0.18px;
   margin-top: 5%;
 }
 
+.redes_s{
+  background-color: blueviolet;
+}
+
 /* @media (max-pxwidth: 767px) {
   .card .img-wrapper {
     height: 17em;
   }
 } */
+
+.circle {
+  background:#A7C3B3;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  opacity: .6;
+}
+@media screen and (max-width: 900px){
+  .imagen_fondo{
+    height: auto;
+  }
+  .imagen_vector{
+    width: 350px;
+    height: 220px
+  }
+  .imagen_cuatro {
+    width: 80px;
+    height: 120px;
+    top: 220px;
+    left: 38px;
+  }
+  .imagen_cero {
+    width: 80px;
+    height: 120px;
+    top: 220px;
+    left: 105px;
+  }
+  .cuatro{
+    object-fit: contain;
+    width: 80%;
+  }
+  .texto_juntos{
+    top: 228px;
+    left: 180px;
+    font-size: 20px;
+  }
+  .texto_cuidando{
+    font-size: 26px;
+    top: 255px;
+    left: 179px;
+  }
+  .texto_de_vos {
+    font-size: 26px;
+    top: 285px;
+    left: 180px
+  }
+  .imagen_espiral_uno {
+    top: 270px;
+    left: 285px;
+  }
+  .circulo_rojo{
+    object-fit: contain;
+    width: 100%;
+  }
+  .imagen_circulo_verde{
+    top: 350px;
+    left: 255px;
+   
+  }
+  .circle{
+    width: 60px;
+    height: 60px;
+  }
+  .imagen_espiral_dos {
+    width: 150px;
+    top: 310px;
+    left: 169px;
+  }
+  .circulo_espiral{
+    object-fit: contain;
+    width: 100%;
+  }
+  .card_informa{
+    font-size: 14px;
+  }
+  .card_informa{
+    width: 90%;
+    margin-left: 0;
+  }
+  .footer_inicial_flex_container{
+    padding: 10px 10px 10px 0;
+    height: auto;
+  }
+  .mapa {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media screen and ((min-width: 230px)and (max-width: 620px)) {
 
   .img_principal {
@@ -544,6 +638,10 @@ letter-spacing: -0.18px;
   .circulo_espiral{
     width: 80px;
     height: 80px;
+  }
+  .circle {
+    width: 30px;
+    height: 30px;
   }
 
   .imagen_espiral_dos {

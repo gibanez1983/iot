@@ -129,6 +129,19 @@ body {
   }
 } */
 
+@media (min-width:1025px) and (max-width:1350px){
+  .nav .nav-links ul a.icon{
+    margin-left: 0;
+  }
+  .nav > .nav-links > ul {
+    padding: revert;
+  }
+  .turnos {
+    padding: 10px 24px;
+  }
+
+}
+
 @media (max-width:1024px) {
 
   .nav > .nav-header{
