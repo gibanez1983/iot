@@ -169,7 +169,6 @@ padding-right:  15px;
 margin-top:  30px;
 text-align: center;
 
-  background: #A61E2F;
 }
 .titulo_confia{
 
@@ -368,7 +367,7 @@ padding-top: 30px;
 .card {
   margin: 0 0.5em;
   border: none;
-  background-color: #A61E2F;
+ 
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -378,6 +377,10 @@ padding-top: 30px;
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.card{
+  width: 10rem;
 }
 
 @media (min-width: 768px) {
