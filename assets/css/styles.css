@@ -79,6 +79,7 @@ a {
   margin: 0 auto;
   position: relative;
   z-index: 5;
+  object-fit: contain;
 }
 
 .card__shadow {
