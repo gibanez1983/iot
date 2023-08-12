@@ -146,10 +146,11 @@ samp {
   width: calc(100% - 16px);
 } */
 .imagen_fondo{
-width: 100%;
-height: 720px;
-margin-left: 0px;
-margin-top: 0px;
+  width: 100%;
+  height: 720px;
+  margin-left: 0px;
+  margin-top: 0px; 
+  object-fit: cover;
 }
 
 /*
