@@ -4,6 +4,7 @@
   height: auto;
   margin-top: 0px;
   margin-left: 0px;
+  display: flex;
 }
 /*--encabezado--*/
 .rectangulo_izq{
@@ -13,6 +14,14 @@
   margin-left: 0px;
   margin-top: 0px;
   background: var(--principal-1);
+}
+
+.rectangulo_dch {
+  width: 65%;
+  background-color: chocolate;
+  height: 660px;
+  display: flex;
+  object-fit: contain;
 }
 /*<!-- titulo y texto rectangulo_izq-->*/
 .p_titulo_izq{
@@ -202,20 +211,23 @@ padding-top: 30px;
   padding-top: 0px;
   width: 100%;
   height: 650px;
+  display: flex;
+}
+.contenido_img{
+  width: 90%;
 }
 .img_servmedlab{
-  width: 477px;
+  object-fit: cover;
   height: 650px;
-  float:left;
-  margin-top: 0;
-  padding-right:  79px;
+  
 }
 .titulos_servicios{
-  width: 100%;
-  height: 718px;
+  width: 60%;
+  height: 650px;
 }
+
 .titulo_servmedlab{
-  width: 888px;
+  width: 90%;
   height: 108px;
   padding-top: 30px;
   font-family: 'Nunito';
@@ -227,8 +239,9 @@ padding-top: 30px;
 
   color: #A61E2F;
 }
+
 .titulo_servmedlab2{
-  width: 888px;
+  width: 90%;
   height: 79px;
   padding-top: 30px;
   font-family: 'Nunito';
@@ -241,7 +254,7 @@ padding-top: 30px;
   color: #2D2926;
 }
 .texto_servmedlab{
-  width: 644px;
+  width: 90%;
   height: 436px;
   font-family: 'Nunito';
   font-style: normal;
@@ -374,6 +387,27 @@ padding-top: 30px;
 
 .card{
   width: 10rem;
+}
+
+.imagen_espiral_dos{
+  width: 202.265px;
+  height: 202.265px;
+  position: absolute;
+  top:  397px;
+  left: 340px;
+}
+
+.imagen_espiral_dos {
+  width: 150px;
+  top: 310px;
+  left: 169px;
+}
+.imagen_espiral_dos {
+  background-color: chocolate;
+  width: 30%;
+  top: 180px;
+  left: 73px;
+  z-index: -1;
 }
 
 .slider{

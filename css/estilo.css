@@ -191,8 +191,9 @@ samp {
   height:auto;
 }
 .img_f2{
-  width: 110px;
+  width: 130px;
   height: 60px;
+  object-fit: contain;
 }
 .footer-data{
   width: auto;
