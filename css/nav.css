@@ -16,7 +16,9 @@ body {
 .nav {
   width: 100%;
   background-color: #A61E2F;
-  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 3;
 }
 
 .logo{

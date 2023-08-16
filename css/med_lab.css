@@ -1,8 +1,11 @@
+body{
+  background-color: #F8F7F6;
+}
 #cuerpo_med_lab{
   background-color: #F8F7F6;
   width:auto;
   height: auto;
-  margin-top: 0px;
+  margin-top: 90px;
   margin-left: 0px;
   display: flex;
 }
@@ -18,7 +21,6 @@
 
 .rectangulo_dch {
   width: 65%;
-  background-color: chocolate;
   height: 660px;
   display: flex;
   object-fit: contain;
@@ -208,9 +210,8 @@ padding-top: 30px;
 }
 /*<!--servicio de med lab -->*/
 .div_servmedlab{
-  padding-top: 0px;
+  padding-top: 20px;
   width: 100%;
-  height: 650px;
   display: flex;
 }
 .contenido_img{
@@ -389,25 +390,40 @@ padding-top: 30px;
   width: 10rem;
 }
 
-.imagen_espiral_dos{
-  width: 202.265px;
-  height: 202.265px;
-  position: absolute;
-  top:  397px;
-  left: 340px;
-}
 
 .imagen_espiral_dos {
-  width: 150px;
-  top: 310px;
-  left: 169px;
-}
-.imagen_espiral_dos {
-  background-color: chocolate;
-  width: 30%;
-  top: 180px;
-  left: 73px;
+  position: absolute;
+  width: 25%;
+  top: 150px;
+  left: 1px;
   z-index: -1;
+}
+
+.imagen_circulo_verde{
+  width: 101.54px;
+  height: 101.54px;
+
+  position: absolute;
+  top: 260px;
+  /*right: 866.05px;
+  bottom:147.06px;*/
+  left: 105px;
+}
+
+.circle {
+  background:#A7C3B3;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  opacity: .6;
+}
+
+.imagen_espiral_uno{
+  width: 15%;
+  height: 134.52px;
+  position: absolute;
+  top:  250px;
+  left: 253px;
 }
 
 .slider{
