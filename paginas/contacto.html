@@ -35,10 +35,14 @@
 
 <div  id="cont_mail">
   <!--formulario mensaje -->
-  <form class="row cont" >
+  <form class="row cont" role="form">
     <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
       <!--titulo mensaje -->
       <p class="titulo_mjs">Envianos un mensaje</p>
+      <p class="statusMsg"></p>
+      <div class="alert alert-warning" role="alert" style="display:none;">
+          <strong>Procesando!! Aguarde...</strong>
+      </div>
     </div>
     <div class="col-sm-12 col-xs-12 col-lg-6 col-md-6">
       <label for="inputNomAp" class="form-label" id="t_c">Nombre y apellido</label>
@@ -56,10 +60,70 @@
     </div>
     <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
       <label for="inputmensaje" class="form-label" id="t_c" style="float:left;">Mensaje</label>
-      <textarea class="form-control" id="inputmensaje" rows="3"></textarea>
+      <textarea class="form-control" id="inputmensaje" rows="3" placeholder="Ingrese su mesaje"></textarea>
     </div>
     <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12" align="center">
-      <button type="submit" class="btn btn-primary" id="enviar">Enviar</button>
+      <button type="button" class="btn btn-primary submitBtn" id="enviar" onclick="accion_enviar()">Enviar</button>
     </div>
   </form>
 </div>
+<script>
+  /*PROCESA FORMULARIO*/
+function accion_enviar(){ //alert(1);
+  $('.submitBtn').attr("disabled","disabled");
+  $('.statusMsg').html('');
+  $('.alert-warning').hide();
+  var inputNomAp = $('#inputNomAp').val();
+  var inputEmail4 = $('#inputEmail4').val();
+  var inputtelefono = $('#inputtelefono').val();
+  var inputmensaje = $('#inputmensaje').val();
+  if(inputNomAp.trim() == '' ){
+          alert('Debe ingresar Nombre y apellido.');
+          $('#inputNomAp').focus();
+          $('.submitBtn').removeAttr("disabled");
+          return false;
+  }else if(inputEmail4.trim() == '' ){
+          alert('Debe ingresar Correo electronico.');
+          $('#inputEmail4').focus();
+          $('.submitBtn').removeAttr("disabled");
+          return false;
+  }else if(inputtelefono.trim() == '' ){
+          alert('Debe ingresar Teléfono.');
+          $('#inputtelefono').focus();
+          $('.submitBtn').removeAttr("disabled");
+          return false;
+  }else if(inputmensaje.trim() == '' ){
+          alert('Debe ingresar Mensaje.');
+          $('#inputmensaje').focus();
+          $('.submitBtn').removeAttr("disabled");
+          return false;
+  }else{
+      $.ajax({
+          type:'POST',
+          url:'paginas/envia_mail.php',
+          data:'resFrmSubmit=1&inputNomAp='+inputNomAp+'&inputEmail4='+inputEmail4+'&inputtelefono='+inputtelefono+'&inputmensaje='+inputmensaje,
+          beforeSend: function () {
+              $('.submitBtn').attr("disabled","disabled");
+              $('.alert-warning').show();
+          },
+           success: function(msg){
+             msg = JSON.parse(msg);
+              if(msg == 'ok'){
+                $('.statusMsg').html('');
+                $('.alert-warning').hide();
+                  alert('Su mensaje se ha enviado correctamente!!');
+                 $('.submitBtn').removeAttr("disabled");
+                 $('#inputNomAp').val('');
+                 $('#inputEmail4').val('');
+                 $('#inputtelefono').val('');
+                 $('#inputmensaje').val('');
+              }else{
+                  $('.statusMsg').html('<span style="color:red;">Ocurrio un error. '+msg+'</span>');
+                   $('.submitBtn').removeAttr("disabled");
+                   $('.alert-warning').hide();
+                }
+          }
+      });
+  }
+}
+</script>

@@ -126,11 +126,9 @@ left: 280.40px;
 .card_informa {
   color: var(--neutral-98);
   font-size: 24px;
-  /*font-family: Nunito;*/
+  font-family: Nunito;
   font-style: normal;
   font-weight: 700;
-  width: 100%;
-  margin-left: 45px;
 
 }
 

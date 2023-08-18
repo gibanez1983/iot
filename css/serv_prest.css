@@ -108,14 +108,15 @@
 
 .oncologia{
   width: 100%;
-  height: 570px;
+  /* height: 570px; */
   display: flex;
   margin-top:20px;
 }
 
+
 .text_onco{
   width: 50%;
-  height: 570px;
+  
 }
 
 .terapia_imagen{
@@ -144,6 +145,14 @@
 .lista{
   width: 100%;
   padding-left: 17%;
+  color: var(--neutro, #2D2926);
+/* Nunito/Body 2/R */
+font-family: Nunito;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+letter-spacing: -0.18px;
 }
 
 .terapia .titulo_terapia{
@@ -279,11 +288,11 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 .titulo_trans{
   width: 100%;
-  height: 150px;
+  
 }
 .texto_trans{
   width: 100%;
-  height: 200px;
+  
 }
 .t_trans{
   font-family: 'Nunito';
@@ -300,19 +309,30 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 #titulo{
+  width: 100%;
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
   line-height: 62px;
   letter-spacing: -0.03em;
+  padding-left: 14%;
   color: #2D2926;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 .texto_internacion{
-  padding-left: 14%;
+  width: 80%;
+  padding-left: 5%;
+  color: var(--neutro, #2D2926);
+/* Nunito/Body 2/R */
+font-family: Nunito;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+letter-spacing: -0.18px;
 }
 #internacion_cuadro{
   margin-bottom: 5%;
