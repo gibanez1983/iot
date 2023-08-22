@@ -54,10 +54,16 @@ body {
 .nav > .nav-links > ul li a{
   display: block;
   padding: 0 8px;
-  color: #fff;
-  line-height: 40px;
-  font-size: 18px;
   text-decoration: none;
+  color: #F8F7F6;
+  text-align: center;
+  /* Nunito/Button/B */
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.05px;
 
 }
 .nav > .nav-links > ul{
@@ -81,7 +87,7 @@ body {
 }
 
 .nav .nav-links ul a.icon{
-  margin-left: 150px;
+  margin-left: 50px;
   text-decoration: none;
 
 }
@@ -99,7 +105,7 @@ body {
 }
 
 .turnos{
-  padding: 17px 24px;
+  padding: 10px 20px;
   align-items: center;
   border-radius: 4px;
   background: var(--principal-3, #F6ECED);
@@ -107,7 +113,7 @@ body {
   text-align: center;
   font-feature-settings: 'clig' off, 'liga' off;
   text-decoration:none;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -135,9 +141,9 @@ body {
   .nav .nav-links ul a.icon{
     margin-left: 0;
   }
-  .nav > .nav-links > ul {
+  /* .nav > .nav-links > ul {
     padding: revert;
-  }
+  } */
   .turnos {
     padding: 10px 24px;
   }

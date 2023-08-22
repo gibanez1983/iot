@@ -34,7 +34,7 @@ body{
 }
 /*<!-- titulo y texto rectangulo_izq-->*/
 .p_titulo_izq{
-  font-family: 'Montserrat';
+  /* font-family: 'Montserrat'; */
   font-style: normal;
   font-weight: 400;
   font-size: 72px;

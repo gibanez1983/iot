@@ -30,19 +30,20 @@
     <script src="boostrap5/js/bootstrap.bundle.min.js"></script>
       <main>
 
-        <div class="container-fluid">
+        <!--div class="container-fluid"-->
           <header>
             <?php
             require_once('header.html');
             ?>
           </header>
-      </div>
-      <div  class="cuerpo" >
+      <!--/div-->
+      <section>
+      <div  class="container-fluid" height="60%" align="middle" >
           <?php
           require_once('routing.php');
           ?>
       </div>
-
+      </section>
 
 
       </main>
