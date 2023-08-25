@@ -10,7 +10,111 @@
   width: 100%;
   margin: 0 auto;
 }
+.imagen_vector{
+  width: 635px;
+  height: 350px;
+  flex-shrink: 0;
+  position: absolute;
+  left: 0px;
+  top: 250px;
+  background: rgba(166, 30, 47, 0.75);
+  border-radius: 6px 55px 2px 6px;
+-webkit-border-radius: 6px 55px 2px 6px;
+-moz-border-radius: 6px 55px 2px 6px;
 
+}
+.circulo_espiral{
+  object-fit: contain;
+  width: 100%;
+}
+
+.imagen_espiral_uno{
+  width: 200px;
+  height: 134.52px;
+  position: absolute;
+  top: 500px;
+  left: 550px;
+}
+.imagen_espiral_dos{
+  width:  300px;
+  height: 202.265px;
+
+  position: absolute;
+  top: 520px;
+  /*right: 866px;
+  bottom:0px;
+  left: 244px;*/
+  left: 340px;
+}
+
+.texto_juntos{
+  color: #FFF;
+  font-size: 26.987px;
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  top: 350px;
+  left: 280.40px;
+}
+
+.imagen_circulo_verde{
+  width: 101.54px;
+  height: 101.54px;
+  position: absolute;
+  top: 550px;
+  left: 505px;
+}
+.circle {
+  background:#A7C3B3;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  opacity: .6;
+}
+
+.texto_cuidando{
+  color: #FFF;
+  font-size: 36px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  position: absolute;
+  top: 380px;
+  left: 280px;
+  }
+
+  .texto_de_vos{
+    color: #FFF;
+    font-size: 36px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    position: absolute;
+    top: 420px;
+    left: 280.40px;
+  }
+
+  .imagen_cuatro{
+    color: #FFFFFF;
+    position: absolute;
+    width:90px;
+    height:121.5px;
+    top: 350px;
+    left:78px;
+  }
+  
+  .imagen_cero{
+    color: #FFFFFF;
+    position: absolute;
+    width:90px;
+    height:126px;
+    top: 347px;
+    left:168px;
+  }
 .principal_portada{
   width: 100%;
   margin: 0 auto;
@@ -184,6 +288,44 @@
 }
 
 @media screen and (max-width: 900px){
+  .imagen_vector{
+    width: 250px;
+    height: 120px;
+    top: 150px;
+  }
+  .imagen_cuatro {
+    width: 30px;
+    height: 30px;
+    top: 190px;
+    left: 20px;
+  }
+  .texto_juntos{
+    font-size: 14px;
+    top: 190px;
+    left: 80.4px;
+  }
+  .texto_cuidando{
+    font-size: 14px;
+    top: 205px;
+    left: 80px;
+  }
+  .texto_de_vos{
+    top: 220px;
+    left: 80.4px;
+    font-size: 14px;
+  }
+  .cuatro {
+    width: 30px;
+    height: 45px;
+}
+
+  .imagen_cero {
+    width: 90px;
+    height: auto;
+    top: 190px;
+    left: 20px;
+  }
+
   .section_principal{
     margin-top: 10%;
   }
