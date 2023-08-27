@@ -154,10 +154,19 @@ a {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 900px) {
+  .card__data {
+    padding: 1rem;
+    height: 350px;
+  }
+  
+}
 @media screen and (max-width: 320px) {
   .card__data {
     padding: 1rem;
+    height: 350px;
   }
+  
 }
 
 /* For medium devices */

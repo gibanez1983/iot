@@ -1,11 +1,4 @@
-:root {
-  --negro: #393939;
-  --texto-contacto-color:#F8F7F6;
-  --color-titulo:#2D2926;
-  /* Tipografía */
-  --tipo-texto_contacto: 'Nunito', sans-serif;
-  --titulo: 'Montserrat', sans-serif;
-}
+/*titulo contacto */
 .cuerpo{
   margin-top:90px;
 } 
@@ -20,7 +13,7 @@
   height: 62px;
   padding-top: 50px;
   /*padding-left: calc(40% - 65%/2);*/
-  font-family: var(--tipo-texto_contacto);
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 600;
   font-size: 60px;
@@ -28,13 +21,6 @@
   letter-spacing: -0.03em;
   color:  var(--principal-1);
   text-align: center;
-}
-.text_direccion{
- text-align: left;
-}
-.cont_dirreccion{
-  display: flex;
-  border-bottom: 1px solid #E4E5E8;
 }
 /*primer cuadro mapa*/
 #grilla_map{
@@ -59,8 +45,10 @@
   height: 288px;
 }*/
 .card_informa_c.contact,#acontact {
-  margin-left: 0;
-  font-family: var(--tipo-texto_contacto);
+  width: 457px;
+  height: 64px;
+
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -72,24 +60,18 @@ text-decoration-line: none;
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin-bottom: 5%;
 }
 
 .icono.contact{
   width: 24px;
   height: 24px;
-  margin-left: 0;
-  margin-right: 10px;
-}
-
-.direc_p{
-  margin-left: 0;
 }
 
 .lc{
+  width: 149px;
   height: 24px;
 
-  font-family: var(--tipo-texto_contacto);
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -127,7 +109,7 @@ padding-bottom: 30px;
   height: 44px;
   padding-top: 40px;
   padding-bottom: 40px;
-  font-family: var(--tipo-texto_contacto);
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -172,7 +154,7 @@ color: #5C6070;
   background:#A61E2F;
   width: 168px;
   height: 44px;
-  font-family: var(--tipo-texto_contacto);
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -228,5 +210,7 @@ color: #5C6070;
     padding-top: 0px;
     font-size: 28px;
   }
-  
+  .card_informa_c.contact,#acontact {
+    width: 100%;
+  }
 }

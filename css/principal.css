@@ -10,18 +10,40 @@
   width: 100%;
   margin: 0 auto;
 }
+.principal_portada{
+  width: 100%;
+  margin: 0 auto;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .imagen_vector{
   width: 635px;
-  height: 350px;
+  height: 280px;
   flex-shrink: 0;
   position: absolute;
-  left: 0px;
-  top: 250px;
   background: rgba(166, 30, 47, 0.75);
   border-radius: 6px 55px 2px 6px;
 -webkit-border-radius: 6px 55px 2px 6px;
 -moz-border-radius: 6px 55px 2px 6px;
-
+display: flex;
+}
+.img_40_anios{
+  width: 50%;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text_40_anios{
+  width: 50%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .circulo_espiral{
   object-fit: contain;
@@ -32,7 +54,7 @@
   width: 200px;
   height: 134.52px;
   position: absolute;
-  top: 500px;
+  top: 130px;
   left: 550px;
 }
 .imagen_espiral_dos{
@@ -40,7 +62,7 @@
   height: 202.265px;
 
   position: absolute;
-  top: 520px;
+  top: 170px;
   /*right: 866px;
   bottom:0px;
   left: 244px;*/
@@ -63,8 +85,8 @@
   width: 101.54px;
   height: 101.54px;
   position: absolute;
-  top: 550px;
-  left: 505px;
+  top: 240px;
+  left: 525px;
 }
 .circle {
   background:#A7C3B3;
@@ -100,26 +122,63 @@
 
   .imagen_cuatro{
     color: #FFFFFF;
-    position: absolute;
     width:90px;
     height:121.5px;
-    top: 350px;
-    left:78px;
+    margin-right: 0;
+    /* top: 350px;
+    left:78px; */
   }
   
   .imagen_cero{
     color: #FFFFFF;
-    position: absolute;
     width:90px;
     height:126px;
-    top: 347px;
-    left:168px;
+    margin-left: 0;
+    margin-right: 0;
+    /* top: 347px;
+    left:168px; */
   }
-.principal_portada{
-  width: 100%;
-  margin: 0 auto;
-  background-size: cover;
-}
+
+  .cont_text_40{
+    margin-left: 0;
+  }
+  .cont_text_40 p{
+    margin-bottom: 0;
+    color: #FFF;
+  font-family: Gotham;
+  font-size: 26.987px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  }
+  .text_dos{
+    margin-left: 0;
+    text-align: left;
+  }
+  .text_dos p{
+    margin-bottom: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 35.982px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .cuatro{
+    height: 110px;
+  }
+  .text_tres{
+    margin-left: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 35.982px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .text_tres{
+    margin-bottom: 0;
+  }
 
 .img_portada_principal{
   width: 100%;
@@ -289,15 +348,28 @@
 
 @media screen and (max-width: 900px){
   .imagen_vector{
-    width: 250px;
-    height: 120px;
-    top: 150px;
+    width: 200px;
+    height: auto;
+    border-radius: 0px 20px 0px 0px;
+    padding: 15px;
+  }
+  .img_40_anios{
+    height: auto;
+    width: 35%;
+  }
+  .text_40_anios {
+    height: auto;
+    width: 65%;
+  }
+  .cont_text_40 p{
+    font-size: 14px;
+  }
+  .text_dos p {
+    font-size: 14px;
   }
   .imagen_cuatro {
     width: 30px;
-    height: 30px;
-    top: 190px;
-    left: 20px;
+    height: auto;
   }
   .texto_juntos{
     font-size: 14px;
@@ -320,10 +392,8 @@
 }
 
   .imagen_cero {
-    width: 90px;
+    width: auto;
     height: auto;
-    top: 190px;
-    left: 20px;
   }
 
   .section_principal{
@@ -348,6 +418,18 @@
   .titulo h1{
     font-size:26px;
   }
+  .imagen_espiral_dos{
+    display: none;
+  }
+  .imagen_circulo_verde{
+    display: none;
+  }
+  .circle{
+    display: none;
+  }
+  .imagen_espiral_uno{
+    display: none;
+  }
   
 }
 
@@ -371,5 +453,17 @@
   .icono_ubicacion {
     width: 15px;
     height: 18px;
+  }
+  .imagen_espiral_dos{
+    display: none;
+  }
+  .imagen_circulo_verde{
+    display: none;
+  }
+  .circle{
+    display: none;
+  }
+  .imagen_espiral_uno{
+    display: none;
   }
 }

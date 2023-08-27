@@ -116,6 +116,15 @@ samp {
   position: relative;
 }
 
+
+.text_tel{
+  display: flex;
+  gap: 10px;
+}
+.text_p{
+  margin:0;
+}
+
 /* .custom-navbar-nav li a:before {
   content: "";
   position: absolute;
@@ -335,7 +344,12 @@ samp {
 .tel{
   width: 24px;
   height: 24px;
+  margin: 0;
 
+}
+
+.email_a{
+  margin: 0;
 }
 .contacto-mail{
   width: 220px;
@@ -347,6 +361,7 @@ samp {
 .mail{
   width: 26.3px;
   height: 24px;
+  margin: 0;
 }
 
 .contacto-direccion{
